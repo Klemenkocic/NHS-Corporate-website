@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import AboutSection from './components/AboutSection';
+import PricingSection from './components/PricingSection';
+import ExpectationsSection from './components/ExpectationsSection';
+import ClientsSection from './components/ClientsSection';
+import LocationSection from './components/LocationSection';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
+import BlobBackground from './components/BlobBackground';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BlobBackground />
+      <div className="App">
+        <Navbar />
+        <HeroSection />
+        <AboutSection />
+        <PricingSection />
+        <ExpectationsSection />
+        <ClientsSection />
+        <LocationSection />
+        <ContactSection />
+        <Footer />
+      </div>
+    </>
   );
-}
+};
 
 export default App;

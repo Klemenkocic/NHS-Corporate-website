@@ -1,0 +1,211 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 10px 0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo a {
+  display: block;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar-logo-white {
+  filter: brightness(0) invert(1);
+}
+
+.navbar.scrolled .navbar-logo-white {
+  filter: none;
+}
+
+.navbar-menu {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.navbar.scrolled .nav-item a {
+  color: #333;
+}
+
+.nav-item a:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #005eb8;
+  transition: width 0.3s;
+}
+
+.nav-item a:hover:after {
+  width: 100%;
+}
+
+.nav-cta {
+  margin-left: 15px;
+}
+
+.nav-button {
+  background-color: #005eb8;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: #005eb8;
+  transform: translateY(-3px);
+}
+
+.nav-button:after {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.navbar.scrolled .hamburger span {
+  background: #333;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .navbar-menu {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 80%;
+    max-width: 300px;
+    height: calc(100vh - 70px);
+    background-color: white;
+    transform: translateX(100%);
+    opacity: 0;
+    overflow-y: auto;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  .navbar-menu.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+  }
+  
+  .nav-item {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  
+  .nav-item a {
+    color: #333;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .nav-cta {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  
+  .nav-button {
+    width: 100%;
+    text-align: center;
+  }
+} 

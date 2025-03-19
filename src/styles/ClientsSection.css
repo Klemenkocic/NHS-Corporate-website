@@ -1,0 +1,147 @@
+.clients-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  position: relative;
+  z-index: 1;
+}
+
+.clients-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clients-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.clients-header h2.highlight {
+  color: #005eb8;
+  margin-bottom: 20px;
+}
+
+.clients-subtext {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.clients-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.client-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.client-logo img {
+  max-width: 100%;
+  max-height: 80px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  object-fit: contain;
+}
+
+.client-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .clients-logos {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .clients-logos {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients-section {
+    padding: 60px 0;
+  }
+  
+  .clients-header h2 {
+    font-size: 2rem;
+  }
+  
+  .clients-subtext {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .clients-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .client-logo {
+    height: 100px;
+    padding: 15px;
+  }
+  
+  .client-logo img {
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .clients-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .clients-subtext {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  .client-logo {
+    height: 80px;
+    padding: 12px;
+  }
+  
+  .client-logo img {
+    max-height: 56px;
+  }
+} 

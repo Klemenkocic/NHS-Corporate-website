@@ -46,6 +46,9 @@
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .pricing-card:hover {
@@ -75,6 +78,7 @@
 
 .card-content {
   padding: 30px;
+  flex: 1;
 }
 
 .card-content ul {
@@ -109,6 +113,10 @@
   padding: 20px;
   text-align: center;
   background-color: #f8f9fa;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-price p {
@@ -121,6 +129,10 @@
 .card-action {
   padding: 30px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
 }
 
 .pricing-results {

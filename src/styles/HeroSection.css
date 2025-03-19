@@ -64,7 +64,7 @@
 }
 
 .hero-content h1.highlight {
-  color: #0095ff;
+  color: #005eb8;
   margin-bottom: 20px;
 }
 
@@ -75,25 +75,6 @@
   letter-spacing: 1px;
 }
 
-.cta-button {
-  background-color: #0095ff;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: transform 0.3s, background-color 0.3s;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.cta-button:hover {
-  background-color: #007acc;
-  transform: translateY(-3px);
-}
-
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
@@ -101,10 +82,5 @@
   
   .hero-content p {
     font-size: 1.2rem;
-  }
-  
-  .cta-button {
-    padding: 12px 25px;
-    font-size: 1rem;
   }
 } 

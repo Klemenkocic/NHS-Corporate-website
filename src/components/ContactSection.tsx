@@ -58,11 +58,11 @@ const ContactSection: React.FC = () => {
               <h3>Opening Hours</h3>
               <div className="hours-grid">
                 <div className="day">Monday - Friday</div>
-                <div className="time">7:00 - 20:00</div>
+                <div className="time">11:00 - 16:00</div>
                 <div className="day">Saturday</div>
-                <div className="time">9:00 - 13:00</div>
+                <div className="time">Closed</div>
                 <div className="day">Sunday</div>
-                <div className="time">9:00 - 13:00</div>
+                <div className="time">Closed</div>
               </div>
             </div>
           </div>

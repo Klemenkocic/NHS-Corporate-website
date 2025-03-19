@@ -1,7 +1,16 @@
 import React from 'react';
 import '../styles/PricingSection.css';
+import { Button } from "@heroui/react";
 
 const PricingSection: React.FC = () => {
+  // Add function to handle contact form opening or redirect
+  const handleBookConsultation = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="pricing" className="pricing-section">
       <div className="pricing-container">
@@ -30,7 +39,25 @@ const PricingSection: React.FC = () => {
               <p>From 140€/session</p>
             </div>
             <div className="card-action">
-              <button className="book-button">Book a Consultation</button>
+              <Button
+                style={{
+                  background: 'linear-gradient(to right, #005eb8, #00205b)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '8px',
+                  padding: '10px 24px',
+                  fontSize: '16px',
+                  fontWeight: 500,
+                  boxShadow: '0 4px 14px 0 rgba(0, 94, 184, 0.39)',
+                  cursor: 'pointer',
+                  transition: 'opacity 0.2s ease, transform 0.2s ease'
+                }}
+                radius="md"
+                onClick={handleBookConsultation}
+                className="nav-contact-button"
+              >
+                Book a Consultation
+              </Button>
             </div>
           </div>
           
@@ -52,7 +79,25 @@ const PricingSection: React.FC = () => {
               <p>On Request</p>
             </div>
             <div className="card-action">
-              <button className="book-button">Request Pricing</button>
+              <Button
+                style={{
+                  background: 'linear-gradient(to right, #005eb8, #00205b)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '8px',
+                  padding: '10px 24px',
+                  fontSize: '16px',
+                  fontWeight: 500,
+                  boxShadow: '0 4px 14px 0 rgba(0, 94, 184, 0.39)',
+                  cursor: 'pointer',
+                  transition: 'opacity 0.2s ease, transform 0.2s ease'
+                }}
+                radius="md"
+                onClick={handleBookConsultation}
+                className="nav-contact-button"
+              >
+                Request Pricing
+              </Button>
             </div>
           </div>
         </div>

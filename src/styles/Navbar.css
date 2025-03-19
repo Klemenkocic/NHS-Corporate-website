@@ -87,22 +87,10 @@
   margin-left: 15px;
 }
 
-.nav-button {
-  background-color: #005eb8;
-  color: white !important;
-  padding: 10px 20px;
-  border-radius: 30px;
-  transition: background-color 0.3s, transform 0.3s;
-  display: inline-block;
-}
-
-.nav-button:hover {
-  background-color: #005eb8;
-  transform: translateY(-3px);
-}
-
-.nav-button:after {
-  display: none;
+/* Styles for the Contact Us button */
+.nav-contact-button:hover {
+  opacity: 0.85 !important;
+  transform: translateY(-2px) !important;
 }
 
 .menu-toggle {
@@ -202,10 +190,5 @@
   .nav-cta {
     margin-left: 0;
     margin-top: 15px;
-  }
-  
-  .nav-button {
-    width: 100%;
-    text-align: center;
   }
 } 

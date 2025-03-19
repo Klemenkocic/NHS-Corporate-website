@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/Navbar.css';
 import { Button } from "@heroui/react";
+import LanguageSwitcher from './LanguageSwitcher';
+
+// Define a type that allows any translation key
+type TranslationFunction = {
+  (key: string): string;
+};
 
 const Navbar: React.FC = () => {
+  // Cast the t function to use our custom type
+  const { t } = useTranslation() as { t: TranslationFunction };
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -59,16 +68,16 @@ const Navbar: React.FC = () => {
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a>
+              <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>{t('navbar.about')}</a>
             </li>
             <li className="nav-item">
-              <a href="#pricing" onClick={(e) => scrollToSection(e, 'pricing')}>Pricing</a>
+              <a href="#pricing" onClick={(e) => scrollToSection(e, 'pricing')}>{t('navbar.pricing')}</a>
             </li>
             <li className="nav-item">
-              <a href="#expectations" onClick={(e) => scrollToSection(e, 'expectations')}>What to Expect</a>
+              <a href="#expectations" onClick={(e) => scrollToSection(e, 'expectations')}>{t('navbar.whatToExpect')}</a>
             </li>
             <li className="nav-item">
-              <a href="#location" onClick={(e) => scrollToSection(e, 'location')}>Location</a>
+              <a href="#location" onClick={(e) => scrollToSection(e, 'location')}>{t('navbar.location')}</a>
             </li>
             <li className="nav-item nav-cta">
               <Button
@@ -88,8 +97,11 @@ const Navbar: React.FC = () => {
                 onClick={(e: React.MouseEvent) => scrollToSection(e, 'contact')}
                 className="nav-contact-button"
               >
-                Contact Us
+                {t('navbar.contactUs')}
               </Button>
+            </li>
+            <li className="nav-item">
+              <LanguageSwitcher />
             </li>
           </ul>
         </div>

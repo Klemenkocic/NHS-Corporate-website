@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './i18n';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';

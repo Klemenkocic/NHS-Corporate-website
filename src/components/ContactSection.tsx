@@ -1,7 +1,16 @@
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/ContactSection.css';
 
+// Define a type that allows any translation key
+type TranslationFunction = {
+  (key: string): string;
+};
+
 const ContactSection: React.FC = () => {
+  // Cast the t function to use our custom type
+  const { t } = useTranslation() as { t: TranslationFunction };
+  
   useEffect(() => {
     // Load Typeform embed script
     const script = document.createElement('script');
@@ -22,9 +31,9 @@ const ContactSection: React.FC = () => {
     <section id="contact" className="contact-section">
       <div className="contact-container">
         <div className="contact-header">
-          <h2>GET IN</h2>
-          <h2 className="highlight">TOUCH</h2>
-          <p>Ready to transform your corporate wellness program? Contact us today.</p>
+          <h2>{t('contact.header1')}</h2>
+          <h2 className="highlight">{t('contact.header2')}</h2>
+          <p>{t('contact.subtitle')}</p>
         </div>
         
         <div className="contact-content">
@@ -37,32 +46,32 @@ const ContactSection: React.FC = () => {
           
           <div className="contact-details">
             <div className="contact-info-box">
-              <h3>Contact Information</h3>
+              <h3>{t('contact.info.title')}</h3>
               <div className="contact-info">
                 <div className="info-item">
                   <span className="info-icon">📍</span>
-                  <p>Lilienthalallee 5 | 80807 München</p>
+                  <p>{t('contact.info.address')}</p>
                 </div>
                 <div className="info-item">
                   <span className="info-icon">📱</span>
-                  <p>+49 176 81253942</p>
+                  <p>{t('contact.info.phone')}</p>
                 </div>
                 <div className="info-item">
                   <span className="info-icon">✉️</span>
-                  <p>info@newhealthsociety.com</p>
+                  <p>{t('contact.info.email')}</p>
                 </div>
               </div>
             </div>
             
             <div className="hours-box">
-              <h3>Opening Hours</h3>
+              <h3>{t('contact.hours.title')}</h3>
               <div className="hours-grid">
-                <div className="day">Monday - Friday</div>
-                <div className="time">11:00 - 16:00</div>
-                <div className="day">Saturday</div>
-                <div className="time">Closed</div>
-                <div className="day">Sunday</div>
-                <div className="time">Closed</div>
+                <div className="day">{t('contact.hours.weekdays')}</div>
+                <div className="time">{t('contact.hours.weekdaysHours')}</div>
+                <div className="day">{t('contact.hours.saturday')}</div>
+                <div className="time">{t('contact.hours.saturdayHours')}</div>
+                <div className="day">{t('contact.hours.sunday')}</div>
+                <div className="time">{t('contact.hours.sundayHours')}</div>
               </div>
             </div>
           </div>

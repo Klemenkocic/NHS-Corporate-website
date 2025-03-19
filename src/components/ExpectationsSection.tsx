@@ -1,12 +1,21 @@
 import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/ExpectationsSection.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+// Define a type that allows any translation key
+type TranslationFunction = {
+  (key: string): string;
+};
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 const ExpectationsSection: React.FC = () => {
+  // Cast the t function to use our custom type
+  const { t } = useTranslation() as { t: TranslationFunction };
+  
   const sectionRef = useRef<HTMLElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
   const horizontalRef = useRef<HTMLDivElement>(null);
@@ -86,7 +95,7 @@ const ExpectationsSection: React.FC = () => {
     <section ref={sectionRef} id="expectations" className="expectations-section">
       <div ref={triggerRef} className="expectations-trigger">
         <div className="expectations-header">
-          <h2>WHAT TO EXPECT?</h2>
+          <h2>{t('expectations.title')}</h2>
           <p>Your wellness journey from start to finish</p>
         </div>
         
@@ -97,9 +106,8 @@ const ExpectationsSection: React.FC = () => {
                 <img src="/assets/Group-Arrival.jpg" alt="Group arrival at facility" />
               </div>
               <div className="expectation-content">
-                <h3>Welcome to Our Gym!</h3>
-                <p>When you arrive, expect a warm welcome from our friendly team, who’ll greet you personally by name. With plenty of parking right outside, getting here couldn’t be easier.</p>
-                <p>Our modern facility features brand-new changing rooms and secure, lockable lockers, providing convenience and peace of mind. Whether you’re joining us for focused individual workouts or dynamic team-building sessions, our gym environment is built to inspire teamwork, energy, and outstanding performance.</p>
+                <h3>{t('expectations.slides.slide1.title')}</h3>
+                <p>{t('expectations.slides.slide1.text')}</p>
               </div>
             </div>
           </div>
@@ -110,9 +118,8 @@ const ExpectationsSection: React.FC = () => {
                 <img src="/assets/Preparation-and-Partnering.jpg" alt="Custom training plan" />
               </div>
               <div className="expectation-content">
-                <h3>Partnering & Team Briefing</h3>
-                <p>Your session kicks off at our front bar, where you’ll receive your personalized amino drink and fresh workout towel to ensure you’re energized and ready to go. To build camaraderie and motivation, you’ll be paired up with another participant—encouraging accountability and mutual support throughout your training.</p>
-                <p>Before we start, one of our expert coaches will walk you through the day’s training session, clearly explaining each exercise and answering any questions you may have. We ensure you’re confident and motivated from the very first rep!</p>
+                <h3>{t('expectations.slides.slide2.title')}</h3>
+                <p>{t('expectations.slides.slide2.text')}</p>
               </div>
             </div>
           </div>
@@ -123,9 +130,8 @@ const ExpectationsSection: React.FC = () => {
                 <img src="/assets/Expert-Supervision.jpg" alt="Training with expert supervision" />
               </div>
               <div className="expectation-content">
-                <h3>Training Under Expert Supervision</h3>
-                <p>Each training session starts with an energizing warm-up to get you ready and focused. Choose your favorite music to boost motivation and make your workout even more enjoyable.</p>
-                <p>Every session is thoughtfully designed to engage your entire body, ensuring balanced and effective training. You’ll work closely with your training partner for extra motivation and accountability, while our experienced coaches provide continuous supervision and personalized guidance to ensure optimal form and safety.</p>
+                <h3>{t('expectations.slides.slide3.title')}</h3>
+                <p>{t('expectations.slides.slide3.text')}</p>
               </div>
             </div>
           </div>
@@ -136,9 +142,8 @@ const ExpectationsSection: React.FC = () => {
                 <img src="/assets/Recovery-and-Refuel.jpg" alt="Recovery and protein refuel" />
               </div>
               <div className="expectation-content">
-                <h3>Recovery and Protein Refuel</h3>
-                <p>After your session, refresh yourself in our brand-new showers with towels provided for your comfort.</p>
-                <p>Then, gather at our bar for a complimentary, custom-made protein shake, crafted to support your recovery and fitness goals. Our coaches will join you for a relaxed debrief, answering any questions you may have about training, nutrition, or your overall progress.</p>
+                <h3>{t('expectations.slides.slide4.title')}</h3>
+                <p>{t('expectations.slides.slide4.text')}</p>
               </div>
             </div>
           </div>
@@ -146,7 +151,7 @@ const ExpectationsSection: React.FC = () => {
       </div>
       
       <div className="scroll-indicator">
-        <span>Scroll to explore</span>
+        <span>{t('expectations.scrollIndicator')}</span>
       </div>
     </section>
   );

@@ -191,13 +191,17 @@
 .stats-wrapper {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .results-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 15px;
   margin-bottom: 5px;
+  height: 100%;
 }
 
 .result-item {
@@ -207,7 +211,6 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
   position: relative;
-  height: 145px;
   display: flex;
   flex-direction: column;
 }
@@ -217,7 +220,7 @@
 }
 
 .result-item h4 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #0095ff;
   margin: 0 0 10px 0;
 }

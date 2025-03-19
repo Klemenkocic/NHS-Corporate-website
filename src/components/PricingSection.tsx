@@ -1,8 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/PricingSection.css';
 import { Button } from "@heroui/react";
 
+// Define a type that allows any translation key
+type TranslationFunction = {
+  (key: string): string;
+};
+
 const PricingSection: React.FC = () => {
+  // Cast the t function to use our custom type
+  const { t } = useTranslation() as { t: TranslationFunction };
+  
   // Add function to handle contact form opening or redirect
   const handleBookConsultation = () => {
     const contactSection = document.getElementById('contact');
@@ -15,28 +24,28 @@ const PricingSection: React.FC = () => {
     <section id="pricing" className="pricing-section">
       <div className="pricing-container">
         <div className="pricing-header">
-          <h2>THE NEW HEALTH SOCIETY</h2>
-          <h2 className="highlight">SOLUTION</h2>
-          <p>The ultimate corporate wellness transformation</p>
+          <h2>{t('pricing.header1')}</h2>
+          <h2 className="highlight">{t('pricing.header2')}</h2>
+          <p>{t('pricing.subtitle')}</p>
         </div>
         
         <div className="pricing-plans">
           <div className="pricing-card executive">
             <div className="card-header">
-              <h3>EXECUTIVE TRAINING</h3>
+              <h3>{t('pricing.executive.title')}</h3>
             </div>
             <div className="card-content">
               <ul>
-                <li>1-on-1 training for optimal results and busy schedules</li>
-                <li>Monthly Coaching Sessions</li>
-                <li>Monthly Health assessments & biometric tracking</li>
-                <li>Custom nutrition & recovery plans for optimal performance</li>
-                <li>Private gym access for complete focus</li>
-                <li>Flexible scheduling for busy individuals</li>
+                <li>{t('pricing.executive.features.feature1')}</li>
+                <li>{t('pricing.executive.features.feature2')}</li>
+                <li>{t('pricing.executive.features.feature3')}</li>
+                <li>{t('pricing.executive.features.feature4')}</li>
+                <li>{t('pricing.executive.features.feature5')}</li>
+                <li>{t('pricing.executive.features.feature6')}</li>
               </ul>
             </div>
             <div className="card-price">
-              <p>From 140€/session</p>
+              <p>{t('pricing.executive.price')}</p>
             </div>
             <div className="card-action">
               <Button
@@ -56,27 +65,27 @@ const PricingSection: React.FC = () => {
                 onClick={handleBookConsultation}
                 className="nav-contact-button"
               >
-                Book a Consultation
+                {t('pricing.executive.cta')}
               </Button>
             </div>
           </div>
           
           <div className="pricing-card group">
             <div className="card-header">
-              <h3>GROUP TRAINING</h3>
+              <h3>{t('pricing.group.title')}</h3>
             </div>
             <div className="card-content">
               <ul>
-                <li>Small-group training for companies focusing on team building and health</li>
-                <li>Maximum 1:6 personal trainer to participant ratio</li>
-                <li>Monthly health assessments & biometric tracking</li>
-                <li>Custom nutrition & recovery plans for optimal performance</li>
-                <li>Private gym access for complete focus - your gym, your music, your people, your vibe</li>
-                <li>Scheduling on availability during lunch time hours</li>
+                <li>{t('pricing.group.features.feature1')}</li>
+                <li>{t('pricing.group.features.feature2')}</li>
+                <li>{t('pricing.group.features.feature3')}</li>
+                <li>{t('pricing.group.features.feature4')}</li>
+                <li>{t('pricing.group.features.feature5')}</li>
+                <li>{t('pricing.group.features.feature6')}</li>
               </ul>
             </div>
             <div className="card-price">
-              <p>On Request</p>
+              <p>{t('pricing.group.price')}</p>
             </div>
             <div className="card-action">
               <Button
@@ -96,7 +105,7 @@ const PricingSection: React.FC = () => {
                 onClick={handleBookConsultation}
                 className="nav-contact-button"
               >
-                Request Pricing
+                {t('pricing.group.cta')}
               </Button>
             </div>
           </div>
@@ -104,31 +113,31 @@ const PricingSection: React.FC = () => {
         
         <div className="pricing-results">
           <div className="results-header">
-            <h3>THE ROI OF INVESTING IN EMPLOYEE WELLNESS</h3>
+            <h3>{t('pricing.roi.title')}</h3>
           </div>
           <div className="results-container">
             <div className="stats-wrapper">
               <div className="results-stats">
                 <div className="result-item">
-                  <h4>30-50%</h4>
-                  <p>Sick leaves drop by integrating wellness programs</p>
+                  <h4>{t('pricing.roi.stats.stat1.value')}</h4>
+                  <p>{t('pricing.roi.stats.stat1.text')}</p>
                 </div>
                 <div className="result-item">
-                  <h4>3-6€ return</h4>
-                  <p>for every €1 invested in wellness resulting in return in productivity</p>
+                  <h4>{t('pricing.roi.stats.stat2.value')}</h4>
+                  <p>{t('pricing.roi.stats.stat2.text')}</p>
                 </div>
                 <div className="result-item">
-                  <h4>14 days</h4>
-                  <p>per year / per employee gained back for active individuals in productivity</p>
+                  <h4>{t('pricing.roi.stats.stat3.value')}</h4>
+                  <p>{t('pricing.roi.stats.stat3.text')}</p>
                 </div>
                 <div className="result-item">
-                  <h4>28%</h4>
-                  <p>Reduction in health costs to the company</p>
+                  <h4>{t('pricing.roi.stats.stat4.value')}</h4>
+                  <p>{t('pricing.roi.stats.stat4.text')}</p>
                 </div>
               </div>
               <div className="results-sources-container">
                 <span className="results-sources-text">
-                  Source:
+                  {t('pricing.roi.source')}:
                   <div className="results-sources-tooltip">
                     <ul>
                       <li><a href="https://www.sfmic.com/roi-and-voi-a-strong-wellness-program-measures-both/" target="_blank" rel="noopener noreferrer">SFMIC - ROI and VOI: A Strong Wellness Program Measures Both</a></li>

@@ -1,7 +1,16 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../styles/LocationSection.css';
 
+// Define a type that allows any translation key
+type TranslationFunction = {
+  (key: string): string;
+};
+
 const LocationSection: React.FC = () => {
+  // Cast the t function to use our custom type
+  const { t } = useTranslation() as { t: TranslationFunction };
+  
   const scrollToContact = (e: React.MouseEvent) => {
     e.preventDefault();
     const contactSection = document.getElementById('contact');
@@ -14,9 +23,9 @@ const LocationSection: React.FC = () => {
     <section id="location" className="location-section">
       <div className="location-container">
         <div className="location-header">
-          <h2>HOW TO</h2>
-          <h2 className="highlight">FIND US</h2>
-          <p className="location-subtext">We're excited to welcome you to New Health Society! Here's everything you need to find us easily and start your journey toward peak performance.</p>
+          <h2>{t('location.header1')}</h2>
+          <h2 className="highlight">{t('location.header2')}</h2>
+          <p className="location-subtext">{t('location.subtext')}</p>
         </div>
         
         <div className="location-content">
@@ -34,15 +43,15 @@ const LocationSection: React.FC = () => {
           </div>
           
           <div className="accessibility-box">
-            <h3>Accessibility</h3>
-            <p>Lilienthalallee 5 | 80807 München</p>
+            <h3>{t('location.accessibility.title')}</h3>
+            <p>{t('location.accessibility.address')}</p>
             <ul className="accessibility-features">
-              <li>Plenty of parking spaces are available for stress-free visits.</li>
-              <li>Easy to reach via Frankfurter Ring by car.</li>
-              <li>Public transport-friendly with direct access via U6 (Studentenstadt).</li>
-              <li>Bike-friendly location with nearby racks for cyclists.</li>
+              <li>{t('location.accessibility.parking')}</li>
+              <li>{t('location.accessibility.car')}</li>
+              <li>{t('location.accessibility.publicTransport')}</li>
+              <li>{t('location.accessibility.bike')}</li>
             </ul>
-            <p className="tour-text">Book a free tour today and experince your new gym in action. Fill out the Typeform bellow!</p>
+            <p className="tour-text">{t('location.accessibility.tourText')}</p>
           </div>
         </div>
       </div>

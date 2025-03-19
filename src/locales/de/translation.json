@@ -1,0 +1,187 @@
+{
+  "navbar": {
+    "about": "Über uns",
+    "pricing": "Preise",
+    "whatToExpect": "Was Sie erwartet",
+    "location": "Standort",
+    "contactUs": "Kontakt"
+  },
+  "hero": {
+    "title1": "REVOLUTIONIERUNG",
+    "title2": "DER BETRIEBLICHEN GESUNDHEIT",
+    "subtitle": "STEIGERUNG VON LEISTUNG, GESUNDHEIT & ROI",
+    "cta": "Preise"
+  },
+  "about": {
+    "header1": "DIE KOSTSPIELIGEN AUSWIRKUNGEN VON",
+    "header2": "GESUNDHEITSPROBLEMEN BEI MITARBEITERN",
+    "stats": {
+      "stat1": {
+        "value": "14%",
+        "text": "Aller Krankheitstage in Deutschland sind allein auf Rückenschmerzen zurückzuführen"
+      },
+      "stat2": {
+        "value": "96,7M€",
+        "text": "Das entspricht einem Umsatzverlust von"
+      },
+      "stat3": {
+        "value": "2,4M+",
+        "text": "Arbeitstage pro Jahr gehen in München durch rückenbedingte Erkrankungen verloren"
+      },
+      "stat4": {
+        "value": "250M€+",
+        "text": "Jährlich allein in München verloren. Ineffizienzen am Arbeitsplatz und stockende Projekte belasten die Finanzen"
+      },
+      "stat5": {
+        "value": "2-6X",
+        "text": "Teurer ist das Arbeiten mit Schmerzen als gesundheitsbedingte Abwesenheiten - resultiert in Effizienzverlusten"
+      },
+      "stat6": {
+        "value": "2945 €",
+        "text": "Pro Jahr — das sind die durchschnittlichen Kosten für die mangelnde Produktivität eines Mitarbeiters aufgrund von Schmerzen"
+      }
+    },
+    "source": "Quelle",
+    "mission": {
+      "title": "UNSERE MISSION",
+      "paragraph1": "New Health Society revolutioniert die betriebliche Gesundheitsförderung durch erstklassige Gesundheitsdienstleistungen, die das Wohlbefinden der Mitarbeiter und die Unternehmensleistung verbessern.",
+      "paragraph2": "Wir kombinieren professionelle Trainingstechniken und personalisierte Beurteilungen mit wöchentlichen Teambuilding-Erfahrungen, um eine nachhaltige Teamgesundheit zu schaffen, die wiederum messbaren ROI für Unternehmen jeder Größe liefert."
+    }
+  },
+  "pricing": {
+    "header1": "DIE NEW HEALTH SOCIETY",
+    "header2": "LÖSUNG",
+    "subtitle": "Die ultimative Transformation der betrieblichen Gesundheit",
+    "executive": {
+      "title": "EXECUTIVE TRAINING",
+      "features": {
+        "feature1": "1-zu-1-Training für optimale Ergebnisse und volle Terminkalender",
+        "feature2": "Monatliche Coaching-Sitzungen",
+        "feature3": "Monatliche Gesundheitsbeurteilungen & biometrisches Tracking",
+        "feature4": "Individuelle Ernährungs- und Erholungspläne für optimale Leistung",
+        "feature5": "Privater Fitnessstudio-Zugang für vollständige Konzentration",
+        "feature6": "Flexible Terminplanung für vielbeschäftigte Personen"
+      },
+      "price": "Ab 140€/Sitzung",
+      "cta": "Beratungstermin vereinbaren"
+    },
+    "group": {
+      "title": "GRUPPENTRAINING",
+      "features": {
+        "feature1": "Kleingruppentraining für Unternehmen mit Fokus auf Teambuilding und Gesundheit",
+        "feature2": "Maximales Verhältnis von 1:6 zwischen Personal Trainer und Teilnehmer",
+        "feature3": "Monatliche Gesundheitsbeurteilungen & biometrisches Tracking",
+        "feature4": "Individuelle Ernährungs- und Erholungspläne für optimale Leistung",
+        "feature5": "Privater Fitnessstudio-Zugang für vollständige Konzentration - Ihr Gym, Ihre Musik, Ihre Leute, Ihr Ambiente",
+        "feature6": "Terminplanung nach Verfügbarkeit während der Mittagszeiten"
+      },
+      "price": "Auf Anfrage",
+      "cta": "Preisanfrage"
+    },
+    "roi": {
+      "title": "DER ROI BEI INVESTITIONEN IN DIE MITARBEITERGESUNDHEIT",
+      "stats": {
+        "stat1": {
+          "value": "30-50%",
+          "text": "Rückgang der Krankheitstage durch Integration von Wellness-Programmen"
+        },
+        "stat2": {
+          "value": "3-6€ Rendite",
+          "text": "für jeden in Wellness investierten €1, was zu einer Steigerung der Produktivität führt"
+        },
+        "stat3": {
+          "value": "14 Tage",
+          "text": "pro Jahr / pro Mitarbeiter werden für aktive Personen in Bezug auf Produktivität zurückgewonnen"
+        },
+        "stat4": {
+          "value": "28%",
+          "text": "Reduzierung der Gesundheitskosten für das Unternehmen"
+        }
+      },
+      "source": "Quelle"
+    }
+  },
+  "expectations": {
+    "title": "WAS SIE ERWARTET?",
+    "slides": {
+      "slide1": {
+        "title": "GRUPPENANKUNFT",
+        "text": "Ihre Reise beginnt mit einer persönlichen Begrüßung durch unser engagiertes Team, das Sie durch unsere hochmoderne Einrichtung führt. Unser Team schafft vom ersten Moment an eine einladende Atmosphäre."
+      },
+      "slide2": {
+        "title": "VORBEREITUNG UND PARTNERING",
+        "text": "Bevor Sie in Ihre Wellness-Sitzung eintauchen, stellen wir sicher, dass Sie mit der notwendigen Ausrüstung ausgestattet sind und mit dem richtigen Trainer für Ihre spezifischen Bedürfnisse und Ziele zusammenarbeiten."
+      },
+      "slide3": {
+        "title": "UMFASSENDES TRAINING",
+        "text": "Erleben Sie unsere Trainingsmethodik, die Kraft, Mobilität und funktionelles Fitness kombiniert. Unsere Experten passen jede Sitzung an die einzigartigen Bedürfnisse Ihres Unternehmens und die individuellen Fähigkeiten an."
+      },
+      "slide4": {
+        "title": "ERHOLUNG UND REGENERATION",
+        "text": "Genießen Sie nach Ihrer Sitzung unseren speziellen Erholungsbereich, um abzukühlen und sich mit gesunden Erfrischungen zu stärken. Dieser wichtige Schritt stellt sicher, dass Sie energiegeladen statt erschöpft zur Arbeit zurückkehren."
+      }
+    },
+    "scrollIndicator": "Scrollen Sie zum Erkunden"
+  },
+  "clients": {
+    "title": "UNSERE KUNDEN"
+  },
+  "location": {
+    "header1": "SO FINDEN",
+    "header2": "SIE UNS",
+    "subtext": "Wir freuen uns, Sie bei New Health Society begrüßen zu dürfen! Hier finden Sie alles, was Sie brauchen, um uns leicht zu finden und Ihre Reise zu Höchstleistungen zu beginnen.",
+    "accessibility": {
+      "title": "Erreichbarkeit",
+      "address": "Lilienthalallee 5 | 80807 München",
+      "parking": "Ausreichend Parkplätze vorhanden.",
+      "car": "Leicht zu erreichen über den Frankfurter Ring mit dem Auto.",
+      "publicTransport": "Gut an öffentliche Verkehrsmittel angebunden mit direktem Zugang über die U6 (Studentenstadt).",
+      "bike": "Fahrradfreundlicher Standort mit Fahrradstellplätzen in der Nähe.",
+      "tourText": "Buchen Sie eine kostenlose Führung im Fitnessstudio. Typeform unten!"
+    }
+  },
+  "contact": {
+    "header1": "NEHMEN SIE",
+    "header2": "KONTAKT AUF",
+    "subtitle": "Bereit, Ihr betriebliches Gesundheitsprogramm zu transformieren? Kontaktieren Sie uns noch heute.",
+    "info": {
+      "title": "Kontaktinformationen",
+      "address": "Lilienthalallee 5 | 80807 München",
+      "phone": "+49 176 81253942",
+      "email": "info@newhealthsociety.com"
+    },
+    "hours": {
+      "title": "Öffnungszeiten",
+      "weekdays": "Montag - Freitag",
+      "weekdaysHours": "11:00 - 16:00",
+      "saturday": "Samstag",
+      "saturdayHours": "Geschlossen",
+      "sunday": "Sonntag",
+      "sundayHours": "Geschlossen"
+    }
+  },
+  "footer": {
+    "tagline": "Revolutionierung der betrieblichen Gesundheit",
+    "sections": {
+      "about": "Über uns",
+      "ourMission": "Unsere Mission",
+      "services": "Dienstleistungen",
+      "whatToExpect": "Was Sie erwartet",
+      "connect": "Verbinden",
+      "location": "Standort",
+      "contactUs": "Kontakt",
+      "requestPricing": "Preisanfrage",
+      "followUs": "Folgen Sie uns"
+    },
+    "legal": {
+      "copyright": "© 2024 New Health Society. Alle Rechte vorbehalten.",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "imprint": "Impressum"
+    }
+  },
+  "common": {
+    "languageSwitcher": "Sprache",
+    "videoUnsupported": "Ihr Browser unterstützt das Video-Tag nicht."
+  }
+} 

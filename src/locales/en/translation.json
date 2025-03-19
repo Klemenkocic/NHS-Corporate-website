@@ -1,0 +1,187 @@
+{
+  "navbar": {
+    "about": "About",
+    "pricing": "Pricing",
+    "whatToExpect": "What to Expect",
+    "location": "Location",
+    "contactUs": "Contact Us"
+  },
+  "hero": {
+    "title1": "REVOLUTIONIZING",
+    "title2": "CORPORATE WELLNESS",
+    "subtitle": "ENHANCING PERFORMANCE, HEALTH, & ROI",
+    "cta": "Pricing"
+  },
+  "about": {
+    "header1": "THE COSTLY IMPACT OF",
+    "header2": "EMPLOYEE HEALTH ISSUES",
+    "stats": {
+      "stat1": {
+        "value": "14%",
+        "text": "Of all sick leave in Germany is due to back pain alone"
+      },
+      "stat2": {
+        "value": "96.7M€",
+        "text": "Equating to lost revenue of"
+      },
+      "stat3": {
+        "value": "2.4M+",
+        "text": "Workdays per year are lost due to back related illnesses in Munich"
+      },
+      "stat4": {
+        "value": "€250M+",
+        "text": "Lost yearly in Munich alone. Workplace inefficiencies and stalled projects drain finances"
+      },
+      "stat5": {
+        "value": "2-6X",
+        "text": "More expensive working in pain than health related leave - resulting in efficiency loss"
+      },
+      "stat6": {
+        "value": "2945 €",
+        "text": "Per year — that's the average cost of an employee's lack of productivity due to pain"
+      }
+    },
+    "source": "Source",
+    "mission": {
+      "title": "OUR MISSION",
+      "paragraph1": "New Health Society is revolutionizing corporate wellness by offering premium health services that improve employee wellbeing and company performance.",
+      "paragraph2": "We combine professional training techniques and personalized assessments with weekly team building experinces to create sustainable team health that in turn delivers measurable ROI for businesses of all sizes."
+    }
+  },
+  "pricing": {
+    "header1": "THE NEW HEALTH SOCIETY",
+    "header2": "SOLUTION",
+    "subtitle": "The ultimate corporate wellness transformation",
+    "executive": {
+      "title": "EXECUTIVE TRAINING",
+      "features": {
+        "feature1": "1-on-1 training for optimal results and busy schedules",
+        "feature2": "Monthly Coaching Sessions",
+        "feature3": "Monthly Health assessments & biometric tracking",
+        "feature4": "Custom nutrition & recovery plans for optimal performance",
+        "feature5": "Private gym access for complete focus",
+        "feature6": "Flexible scheduling for busy individuals"
+      },
+      "price": "From 140€/session",
+      "cta": "Book a Consultation"
+    },
+    "group": {
+      "title": "GROUP TRAINING",
+      "features": {
+        "feature1": "Small-group training for companies focusing on team building and health",
+        "feature2": "Maximum 1:6 personal trainer to participant ratio",
+        "feature3": "Monthly health assessments & biometric tracking",
+        "feature4": "Custom nutrition & recovery plans for optimal performance",
+        "feature5": "Private gym access for complete focus - your gym, your music, your people, your vibe",
+        "feature6": "Scheduling on availability during lunch time hours"
+      },
+      "price": "On Request",
+      "cta": "Request Pricing"
+    },
+    "roi": {
+      "title": "THE ROI OF INVESTING IN EMPLOYEE WELLNESS",
+      "stats": {
+        "stat1": {
+          "value": "30-50%",
+          "text": "Sick leaves drop by integrating wellness programs"
+        },
+        "stat2": {
+          "value": "3-6€ return",
+          "text": "for every €1 invested in wellness resulting in return in productivity"
+        },
+        "stat3": {
+          "value": "14 days",
+          "text": "per year / per employee gained back for active individuals in productivity"
+        },
+        "stat4": {
+          "value": "28%",
+          "text": "Reduction in health costs to the company"
+        }
+      },
+      "source": "Source"
+    }
+  },
+  "expectations": {
+    "title": "WHAT TO EXPECT?",
+    "slides": {
+      "slide1": {
+        "title": "GROUP ARRIVAL",
+        "text": "Your journey begins with a personalized greeting from our dedicated staff, who will guide you through our state-of-the-art facility. Our team creates a welcoming atmosphere from the moment you arrive."
+      },
+      "slide2": {
+        "title": "PREPARATION AND PARTNERING",
+        "text": "Before diving into your wellness session, we ensure you're properly prepared with any necessary equipment and paired with the right trainer for your specific needs and goals."
+      },
+      "slide3": {
+        "title": "COMPREHENSIVE TRAINING",
+        "text": "Experience our signature training methodology that combines strength, mobility, and functional fitness. Our experts adapt each session to your company's unique needs and individual ability levels."
+      },
+      "slide4": {
+        "title": "RECOVERY AND REFUEL",
+        "text": "After your session, enjoy our dedicated recovery space to cool down and refuel with healthy refreshments. This important step ensures you return to work energized rather than exhausted."
+      }
+    },
+    "scrollIndicator": "Scroll to explore"
+  },
+  "clients": {
+    "title": "OUR CLIENTS"
+  },
+  "location": {
+    "header1": "HOW TO",
+    "header2": "FIND US",
+    "subtext": "We're excited to welcome you to New Health Society! Here's everything you need to find us easily and start your journey toward peak performance.",
+    "accessibility": {
+      "title": "Accessibility",
+      "address": "Lilienthalallee 5 | 80807 München",
+      "parking": "Plenty of parking spaces are available for stress-free visits.",
+      "car": "Easy to reach via Frankfurter Ring by car.",
+      "publicTransport": "Public transport-friendly with direct access via U6 (Studentenstadt).",
+      "bike": "Bike-friendly location with nearby racks for cyclists.",
+      "tourText": "Book a free tour today and experience your new gym in action. Fill out the Typeform below!"
+    }
+  },
+  "contact": {
+    "header1": "GET IN",
+    "header2": "TOUCH",
+    "subtitle": "Ready to transform your corporate wellness program? Contact us today.",
+    "info": {
+      "title": "Contact Information",
+      "address": "Lilienthalallee 5 | 80807 München",
+      "phone": "+49 176 81253942",
+      "email": "info@newhealthsociety.com"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "weekdays": "Monday - Friday",
+      "weekdaysHours": "11:00 - 16:00",
+      "saturday": "Saturday",
+      "saturdayHours": "Closed",
+      "sunday": "Sunday",
+      "sundayHours": "Closed"
+    }
+  },
+  "footer": {
+    "tagline": "Revolutionizing Corporate Wellness",
+    "sections": {
+      "about": "About",
+      "ourMission": "Our Mission",
+      "services": "Services",
+      "whatToExpect": "What to Expect",
+      "connect": "Connect",
+      "location": "Location",
+      "contactUs": "Contact Us",
+      "requestPricing": "Request Pricing",
+      "followUs": "Follow Us"
+    },
+    "legal": {
+      "copyright": "© 2024 New Health Society. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "imprint": "Imprint"
+    }
+  },
+  "common": {
+    "languageSwitcher": "Language",
+    "videoUnsupported": "Your browser does not support the video tag."
+  }
+} 

@@ -77,12 +77,14 @@
 }
 
 .footer-nav-column a:hover {
-  color: #0095ff;
+  color: #005eb8;
 }
 
 .social-links {
   display: flex;
   gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .social-links a {
@@ -128,7 +130,7 @@
 }
 
 .footer-links a:hover {
-  color: #0095ff;
+  color: #005eb8;
 }
 
 /* Media Queries */

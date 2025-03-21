@@ -2,13 +2,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/PricingSection.css';
 import { Button } from "@heroui/react";
+import { TranslationFunction } from '../types/i18n';
 
-// Define a type that allows any translation key
-type TranslationFunction = {
-  (key: string): string;
-};
-
-const PricingSection: React.FC = () => {
+const InvestmentSection: React.FC = () => {
   // Cast the t function to use our custom type
   const { t } = useTranslation() as { t: TranslationFunction };
   
@@ -21,12 +17,10 @@ const PricingSection: React.FC = () => {
   };
 
   return (
-    <section id="pricing" className="pricing-section">
+    <section id="investment" className="pricing-section">
       <div className="pricing-container">
         <div className="pricing-header">
-          <h2>{t('pricing.header1')}</h2>
-          <h2 className="highlight">{t('pricing.header2')}</h2>
-          <p>{t('pricing.subtitle')}</p>
+          <h2>{t('pricing.header2')}</h2>
         </div>
         
         <div className="pricing-plans">
@@ -149,7 +143,7 @@ const PricingSection: React.FC = () => {
               </div>
             </div>
             <div className="results-image">
-              <img src="/assets/Comprehensive-Training-New.jpg" alt="Comprehensive Training session" />
+              <img src="/assets/ROI.jpg" alt="Return on Investment in Corporate Wellness" />
             </div>
           </div>
         </div>
@@ -158,4 +152,4 @@ const PricingSection: React.FC = () => {
   );
 };
 
-export default PricingSection; 
+export default InvestmentSection; 

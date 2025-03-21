@@ -13,7 +13,7 @@
 
 .expectations-header {
   text-align: center;
-  padding: 90px 0 30px; /* Reduced padding */
+  padding: 90px 0 30px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -36,8 +36,8 @@
   flex-wrap: nowrap;
   width: 400%; /* Width for 4 slides (100% * 4) */
   height: 85vh; /* Set fixed height relative to viewport */
-  min-height: 550px; /* Minimum height to ensure content fits */
-  max-height: 750px; /* Maximum height to prevent excessive space */
+  min-height: 600px; /* Increased minimum height to ensure content fits */
+  max-height: 800px; /* Increased maximum height */
   position: relative;
   transform: translateX(0);
   padding: 0 5%;
@@ -49,22 +49,22 @@
   min-width: 25%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0 20px;
+  align-items: flex-start;
+  padding: 60px 20px 0 20px;
 }
 
 .expectation-content-container {
   display: flex;
   background-color: white;
   border-radius: 15px;
-  padding: 30px; /* Reduced padding */
+  padding: 40px; /* Increased padding */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  min-height: 450px; /* Reduced min-height */
+  min-height: 500px; /* Increased min-height */
   height: auto; /* Allow content to determine height with min/max constraints */
-  max-height: 650px; /* Maximum height */
+  max-height: 700px; /* Increased maximum height */
   align-items: center;
   overflow: auto; /* For content that might overflow */
 }
@@ -80,7 +80,7 @@
 
 .expectation-image {
   flex: 1;
-  padding: 15px; /* Reduced padding */
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center; /* Center vertically */
@@ -88,8 +88,8 @@
 
 .expectation-image img {
   width: 100%;
-  max-width: 450px;
-  height: 350px; /* Reduced fixed height for all images */
+  max-width: 500px; /* Increased max width */
+  height: 400px; /* Increased fixed height for all images */
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   object-fit: cover; /* Maintain aspect ratio while covering container */
@@ -97,21 +97,69 @@
 
 .expectation-content {
   flex: 1;
-  padding: 15px; /* Reduced padding */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title-time-container {
+  display: inline-flex;
+  align-items: baseline;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .expectation-content h3 {
-  font-size: 1.8rem; /* Reduced font size */
+  font-size: 1.8rem;
   color: #005eb8;
-  margin: 0 0 15px 0; /* Reduced margin */
+  margin: 0;
   font-weight: 700;
+  display: inline;
 }
 
-.expectation-content p {
-  font-size: 1rem; /* Reduced font size */
-  line-height: 1.6;
+.time-indicator {
+  font-size: 1.2rem;
+  color: #999;
+  margin-left: 8px;
+  font-weight: 400;
+  font-style: italic;
+  display: inline;
+  white-space: nowrap;
+}
+
+.expectation-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  width: 90%;
+  max-width: 500px;
+}
+
+.expectation-bullet-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5;
   color: #333;
-  margin-bottom: 12px; /* Reduced margin */
+  display: flex;
+  align-items: flex-start;
+}
+
+.expectation-bullet-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: #005eb8;
+  font-size: 1.4rem;
+  line-height: 1;
 }
 
 .scroll-indicator {
@@ -143,7 +191,7 @@
 @media (max-width: 992px) {
   .expectations-horizontal {
     height: auto;
-    min-height: 550px;
+    min-height: 600px;
     padding: 0 2%;
   }
   
@@ -151,28 +199,32 @@
     flex-direction: column !important;
     min-height: auto;
     height: auto; /* Allow height to adjust on smaller screens */
-    padding: 25px; /* Further reduced padding */
+    padding: 30px; /* Reduced padding for mobile */
   }
   
   .expectation-image {
     width: 100%;
-    margin-bottom: 15px; /* Reduced margin */
+    margin-bottom: 20px; /* Increased margin */
   }
   
   .expectation-image img {
-    height: 250px; /* Smaller fixed height on tablets */
+    height: 300px; /* Increased but still smaller height on tablets */
   }
   
   .expectation-content h3 {
     font-size: 1.6rem;
   }
   
-  .expectation-content p {
-    font-size: 0.95rem;
+  .time-indicator {
+    font-size: 1.1rem;
+  }
+  
+  .expectation-bullet-list li {
+    font-size: 1rem;
   }
   
   .expectations-header {
-    padding: 40px 0 20px; /* Further reduced padding */
+    padding: 60px 0 30px; /* Adjusted padding */
   }
 }
 
@@ -187,7 +239,7 @@
   }
   
   .expectation-image img {
-    height: 200px; /* Even smaller height on mobile */
+    height: 250px; /* Adjusted height on mobile */
   }
 }
 
@@ -208,8 +260,16 @@
     font-size: 1.4rem;
   }
   
-  .expectation-content p {
+  .time-indicator {
+    font-size: 1rem;
+  }
+  
+  .expectation-bullet-list li {
     font-size: 0.9rem;
-    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .expectation-image img {
+    height: 200px; /* Even smaller height on small mobile */
   }
 } 

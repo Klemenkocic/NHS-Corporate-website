@@ -69,6 +69,8 @@ const AboutSection: React.FC = () => {
           <div className="text-content">
             <h3>{t('about.mission.title')}</h3>
             <p>{t('about.mission.paragraph1')}</p>
+            <hr className="divider" />
+            <h3>{t('about.mission.title2')}</h3>
             <p>{t('about.mission.paragraph2')}</p>
           </div>
           

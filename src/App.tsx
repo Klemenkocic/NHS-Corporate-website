@@ -4,13 +4,15 @@ import './i18n';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
-import PricingSection from './components/PricingSection';
+import InvestmentSection from './components/PricingSection';
 import ExpectationsSection from './components/ExpectationsSection';
 import ClientsSection from './components/ClientsSection';
 import LocationSection from './components/LocationSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import BlobBackground from './components/BlobBackground';
+import BackToTop from './components/BackToTop';
+import CookieConsent from './components/CookieConsent';
 
 const App: React.FC = () => {
   return (
@@ -20,12 +22,14 @@ const App: React.FC = () => {
         <Navbar />
         <HeroSection />
         <AboutSection />
-        <PricingSection />
+        <InvestmentSection />
         <ExpectationsSection />
         <ClientsSection />
         <LocationSection />
         <ContactSection />
         <Footer />
+        <BackToTop />
+        <CookieConsent />
       </div>
     </>
   );

@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/ContactSection.css';
-
-// Define a type that allows any translation key
-type TranslationFunction = {
-  (key: string): string;
-};
+import { TranslationFunction } from '../types/i18n';
 
 const ContactSection: React.FC = () => {
-  // Cast the t function to use our custom type
   const { t } = useTranslation() as { t: TranslationFunction };
   
   useEffect(() => {

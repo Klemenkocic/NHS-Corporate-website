@@ -14,10 +14,10 @@ const ClientsSection: React.FC = () => {
   // Client data with logo image paths
   const clients = [
     { name: 'Google', logo: '/assets/Google.png' },
-    { name: 'BioNTech', logo: '/assets/BioNTech.png' },
+    { name: 'Autodoc', logo: '/assets/autodoc.svg' },
     { name: 'ImmoScout24', logo: '/assets/ImmoScout24.png' },
     { name: 'Klarna', logo: '/assets/Klarna.webp' },
-    { name: 'Autodoc', logo: '/assets/autodoc.svg' },
+    { name: 'BioNTech', logo: '/assets/BioNTech.png' },
     { name: 'Autohero', logo: '/assets/autohero.png' },
     { name: 'CHS', logo: '/assets/csm_CHS_Logo_RGB_d40d58f2d9.png' },
     { name: 'Witte', logo: '/assets/witte.png' },

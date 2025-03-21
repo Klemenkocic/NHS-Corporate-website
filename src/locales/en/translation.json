@@ -1,7 +1,7 @@
 {
   "navbar": {
     "about": "About",
-    "pricing": "Pricing",
+    "pricing": "Investment",
     "whatToExpect": "What to Expect",
     "location": "Location",
     "contactUs": "Contact Us"
@@ -9,8 +9,8 @@
   "hero": {
     "title1": "REVOLUTIONIZING",
     "title2": "CORPORATE WELLNESS",
-    "subtitle": "ENHANCING PERFORMANCE, HEALTH, & ROI",
-    "cta": "Pricing"
+    "subtitle": "ENHANCING PERFORMANCE, HEALTH, & PRODUCTIVITY",
+    "cta": "Investment"
   },
   "about": {
     "header1": "THE COSTLY IMPACT OF",
@@ -18,40 +18,39 @@
     "stats": {
       "stat1": {
         "value": "14%",
-        "text": "Of all sick leave in Germany is due to back pain alone"
+        "text": "Of all sick leave in Germany was due to back pain alone in 2024."
       },
       "stat2": {
-        "value": "96.7M€",
-        "text": "Equating to lost revenue of"
+        "value": "€238B",
+        "text": "Lost revenue in Germany in 2024."
       },
       "stat3": {
-        "value": "2.4M+",
-        "text": "Workdays per year are lost due to back related illnesses in Munich"
+        "value": "3.1M+",
+        "text": "Workdays per year are lost due to back related illnesses in Munich in 2024. Or 8.510 years."
       },
       "stat4": {
-        "value": "€250M+",
-        "text": "Lost yearly in Munich alone. Workplace inefficiencies and stalled projects drain finances"
+        "value": "€674M",
+        "text": "Lost yearly in Munich alone."
       },
       "stat5": {
-        "value": "2-6X",
-        "text": "More expensive working in pain than health related leave - resulting in efficiency loss"
+        "value": "72%",
+        "text": "0f companies saw reduced healthcare costs after implementing a wellness program."
       },
       "stat6": {
-        "value": "2945 €",
-        "text": "Per year — that's the average cost of an employee's lack of productivity due to pain"
+        "value": "€3168,2",
+        "text": "Per year — that's the average cost of an employee's lack of productivity due to pain."
       }
     },
     "source": "Source",
     "mission": {
       "title": "OUR MISSION",
-      "paragraph1": "New Health Society is revolutionizing corporate wellness by offering premium health services that improve employee wellbeing and company performance.",
-      "paragraph2": "We combine professional training techniques and personalized assessments with weekly team building experinces to create sustainable team health that in turn delivers measurable ROI for businesses of all sizes."
+      "paragraph1": "Is creating a healthier society throughout every aspect of life: Personal and Business. We do that by delivering a higher standard in personal training experiences. ",
+      "title2": "OUR APPROACH",
+      "paragraph2": "Is blending innovative sport science with proven training methods, while providing your team members the space where they can live your company culture. "
     }
   },
   "pricing": {
-    "header1": "THE NEW HEALTH SOCIETY",
-    "header2": "SOLUTION",
-    "subtitle": "The ultimate corporate wellness transformation",
+    "header2": "INVESTMENT",
     "executive": {
       "title": "EXECUTIVE TRAINING",
       "features": {
@@ -72,11 +71,11 @@
         "feature2": "Maximum 1:6 personal trainer to participant ratio",
         "feature3": "Monthly health assessments & biometric tracking",
         "feature4": "Custom nutrition & recovery plans for optimal performance",
-        "feature5": "Private gym access for complete focus - your gym, your music, your people, your vibe",
+        "feature5": "Private gym slot for complete focus - your gym, your music, your people, your vibe",
         "feature6": "Scheduling on availability during lunch time hours"
       },
-      "price": "On Request",
-      "cta": "Request Pricing"
+      "price": "Starting from 1000€ a month",
+      "cta": "Book a Consultation"
     },
     "roi": {
       "title": "THE ROI OF INVESTING IN EMPLOYEE WELLNESS",
@@ -103,22 +102,43 @@
   },
   "expectations": {
     "title": "WHAT TO EXPECT?",
+    "subtitle": "How a training session at New Health Society looks like",
     "slides": {
       "slide1": {
         "title": "GROUP ARRIVAL",
-        "text": "Your journey begins with a personalized greeting from our dedicated staff, who will guide you through our state-of-the-art facility. Our team creates a welcoming atmosphere from the moment you arrive."
+        "time": "5min",
+        "bullets": {
+          "bullet1": "Park in our private parking spots",
+          "bullet2": "Change into your training clothes",
+          "bullet3": "Meet your coach at the bar"
+        }
       },
       "slide2": {
-        "title": "PREPARATION AND PARTNERING",
-        "text": "Before diving into your wellness session, we ensure you're properly prepared with any necessary equipment and paired with the right trainer for your specific needs and goals."
+        "title": "PREPARATION AND WARMUP",
+        "time": "10min",
+        "bullets": {
+          "bullet1": "Grab your complimentary towel andaminos",
+          "bullet2": "Pair up with a training partner",
+          "bullet3": "Get a quick briefing on today's session"
+        }
       },
       "slide3": {
-        "title": "COMPREHENSIVE TRAINING",
-        "text": "Experience our signature training methodology that combines strength, mobility, and functional fitness. Our experts adapt each session to your company's unique needs and individual ability levels."
+        "title": "TEAM TRAINING",
+        "time": "45min",
+        "bullets": {
+          "bullet1": "Train together with your partner",
+          "bullet2": "Always supervised by at least one coach",
+          "bullet3": "Full-body sessions every day for balanced, consistent progress"
+        }
       },
       "slide4": {
         "title": "RECOVERY AND REFUEL",
-        "text": "After your session, enjoy our dedicated recovery space to cool down and refuel with healthy refreshments. This important step ensures you return to work energized rather than exhausted."
+        "time": "10min",
+        "bullets": {
+          "bullet1": "Shower with fresh towels provided by New Health Society",
+          "bullet2": "Enjoy a post-workout protein shake (optional)",
+          "bullet3": "Ask your coach any questions about training or nutrition at the bar"
+        }
       }
     },
     "scrollIndicator": "Scroll to explore"
@@ -170,18 +190,23 @@
       "connect": "Connect",
       "location": "Location",
       "contactUs": "Contact Us",
-      "requestPricing": "Request Pricing",
+      "requestPricing": "Request Investment",
       "followUs": "Follow Us"
     },
     "legal": {
       "copyright": "© 2024 New Health Society. All rights reserved.",
       "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
+      "terms": "Terms & Conditions",
       "imprint": "Imprint"
     }
   },
   "common": {
     "languageSwitcher": "Language",
     "videoUnsupported": "Your browser does not support the video tag."
+  },
+  "cookies": {
+    "text": "We use cookies",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 } 

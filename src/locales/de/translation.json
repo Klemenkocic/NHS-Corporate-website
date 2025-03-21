@@ -1,7 +1,7 @@
 {
   "navbar": {
     "about": "Über uns",
-    "pricing": "Preise",
+    "pricing": "Investition",
     "whatToExpect": "Was Sie erwartet",
     "location": "Standort",
     "contactUs": "Kontakt"
@@ -10,7 +10,7 @@
     "title1": "REVOLUTIONIERUNG",
     "title2": "DER BETRIEBLICHEN GESUNDHEIT",
     "subtitle": "STEIGERUNG VON LEISTUNG, GESUNDHEIT & ROI",
-    "cta": "Preise"
+    "cta": "Investition"
   },
   "about": {
     "header1": "DIE KOSTSPIELIGEN AUSWIRKUNGEN VON",
@@ -44,13 +44,14 @@
     "source": "Quelle",
     "mission": {
       "title": "UNSERE MISSION",
-      "paragraph1": "New Health Society revolutioniert die betriebliche Gesundheitsförderung durch erstklassige Gesundheitsdienstleistungen, die das Wohlbefinden der Mitarbeiter und die Unternehmensleistung verbessern.",
-      "paragraph2": "Wir kombinieren professionelle Trainingstechniken und personalisierte Beurteilungen mit wöchentlichen Teambuilding-Erfahrungen, um eine nachhaltige Teamgesundheit zu schaffen, die wiederum messbaren ROI für Unternehmen jeder Größe liefert."
+      "paragraph1": "Ist es, eine gesündere Gesellschaft in allen Lebensbereichen zu schaffen: Persönlich und Geschäftlich. Wir tun dies, indem wir einen höheren Standard bei Personal-Training-Erfahrungen bieten.",
+      "title2": "UNSER ANSATZ",
+      "paragraph2": "Verbindet innovative Sportwissenschaft mit bewährten Trainingsmethoden und bietet Ihren Teammitgliedern den Raum, in dem sie Ihre Unternehmenskultur leben können."
     }
   },
   "pricing": {
     "header1": "DIE NEW HEALTH SOCIETY",
-    "header2": "LÖSUNG",
+    "header2": "INVESTITION",
     "subtitle": "Die ultimative Transformation der betrieblichen Gesundheit",
     "executive": {
       "title": "EXECUTIVE TRAINING",
@@ -75,8 +76,8 @@
         "feature5": "Privater Fitnessstudio-Zugang für vollständige Konzentration - Ihr Gym, Ihre Musik, Ihre Leute, Ihr Ambiente",
         "feature6": "Terminplanung nach Verfügbarkeit während der Mittagszeiten"
       },
-      "price": "Auf Anfrage",
-      "cta": "Preisanfrage"
+      "price": "Ab 1000€ pro Monat",
+      "cta": "Beratungstermin vereinbaren"
     },
     "roi": {
       "title": "DER ROI BEI INVESTITIONEN IN DIE MITARBEITERGESUNDHEIT",
@@ -103,22 +104,43 @@
   },
   "expectations": {
     "title": "WAS SIE ERWARTET?",
+    "subtitle": "Wie eine Trainingseinheit bei New Health Society aussieht",
     "slides": {
       "slide1": {
         "title": "GRUPPENANKUNFT",
-        "text": "Ihre Reise beginnt mit einer persönlichen Begrüßung durch unser engagiertes Team, das Sie durch unsere hochmoderne Einrichtung führt. Unser Team schafft vom ersten Moment an eine einladende Atmosphäre."
+        "time": "5min",
+        "bullets": {
+          "bullet1": "Parken auf unseren privaten Parkplätzen",
+          "bullet2": "Umziehen in Ihre Trainingsbekleidung",
+          "bullet3": "Treffen Sie Ihren Coach an der Bar"
+        }
       },
       "slide2": {
-        "title": "VORBEREITUNG UND PARTNERING",
-        "text": "Bevor Sie in Ihre Wellness-Sitzung eintauchen, stellen wir sicher, dass Sie mit der notwendigen Ausrüstung ausgestattet sind und mit dem richtigen Trainer für Ihre spezifischen Bedürfnisse und Ziele zusammenarbeiten."
+        "title": "VORBEREITUNG UND AUFWÄRMEN",
+        "time": "10min",
+        "bullets": {
+          "bullet1": "Erhalten Sie Ihr kostenloses Handtuch und Aminosäuren",
+          "bullet2": "Finden Sie einen Trainingspartner",
+          "bullet3": "Erhalten Sie ein kurzes Briefing über die heutige Einheit"
+        }
       },
       "slide3": {
-        "title": "UMFASSENDES TRAINING",
-        "text": "Erleben Sie unsere Trainingsmethodik, die Kraft, Mobilität und funktionelles Fitness kombiniert. Unsere Experten passen jede Sitzung an die einzigartigen Bedürfnisse Ihres Unternehmens und die individuellen Fähigkeiten an."
+        "title": "TEAM-TRAINING",
+        "time": "45min",
+        "bullets": {
+          "bullet1": "Trainieren Sie gemeinsam mit Ihrem Partner",
+          "bullet2": "Immer unter Aufsicht von mindestens einem Coach",
+          "bullet3": "Ganzkörpertraining jeden Tag für ausgeglichenen, konstanten Fortschritt"
+        }
       },
       "slide4": {
         "title": "ERHOLUNG UND REGENERATION",
-        "text": "Genießen Sie nach Ihrer Sitzung unseren speziellen Erholungsbereich, um abzukühlen und sich mit gesunden Erfrischungen zu stärken. Dieser wichtige Schritt stellt sicher, dass Sie energiegeladen statt erschöpft zur Arbeit zurückkehren."
+        "time": "10min",
+        "bullets": {
+          "bullet1": "Duschen Sie mit frischen Handtüchern von New Health Society",
+          "bullet2": "Genießen Sie einen Protein-Shake nach dem Training (optional)",
+          "bullet3": "Stellen Sie Ihrem Coach an der Bar Fragen zum Training oder zur Ernährung"
+        }
       }
     },
     "scrollIndicator": "Scrollen Sie zum Erkunden"
@@ -170,18 +192,23 @@
       "connect": "Verbinden",
       "location": "Standort",
       "contactUs": "Kontakt",
-      "requestPricing": "Preisanfrage",
+      "requestPricing": "Investition anfragen",
       "followUs": "Folgen Sie uns"
     },
     "legal": {
       "copyright": "© 2024 New Health Society. Alle Rechte vorbehalten.",
-      "privacy": "Datenschutzrichtlinie",
-      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutz",
+      "terms": "Geschäftsbedingungen",
       "imprint": "Impressum"
     }
   },
   "common": {
     "languageSwitcher": "Sprache",
     "videoUnsupported": "Ihr Browser unterstützt das Video-Tag nicht."
+  },
+  "cookies": {
+    "text": "Wir verwenden Cookies",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
   }
 } 

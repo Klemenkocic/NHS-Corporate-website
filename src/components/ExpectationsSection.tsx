@@ -96,7 +96,7 @@ const ExpectationsSection: React.FC = () => {
       <div ref={triggerRef} className="expectations-trigger">
         <div className="expectations-header">
           <h2>{t('expectations.title')}</h2>
-          <p>Your wellness journey from start to finish</p>
+          <p>{t('expectations.subtitle')}</p>
         </div>
         
         <div ref={horizontalRef} className="expectations-horizontal">
@@ -106,8 +106,15 @@ const ExpectationsSection: React.FC = () => {
                 <img src="/assets/Group-Arrival.jpg" alt="Group arrival at facility" />
               </div>
               <div className="expectation-content">
-                <h3>{t('expectations.slides.slide1.title')}</h3>
-                <p>{t('expectations.slides.slide1.text')}</p>
+                <div className="title-time-container">
+                  <h3>{t('expectations.slides.slide1.title')}</h3>
+                  <span className="time-indicator">{t('expectations.slides.slide1.time')}</span>
+                </div>
+                <ul className="expectation-bullet-list">
+                  <li>{t('expectations.slides.slide1.bullets.bullet1')}</li>
+                  <li>{t('expectations.slides.slide1.bullets.bullet2')}</li>
+                  <li>{t('expectations.slides.slide1.bullets.bullet3')}</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -118,8 +125,15 @@ const ExpectationsSection: React.FC = () => {
                 <img src="/assets/Preparation-and-Partnering.jpg" alt="Custom training plan" />
               </div>
               <div className="expectation-content">
-                <h3>{t('expectations.slides.slide2.title')}</h3>
-                <p>{t('expectations.slides.slide2.text')}</p>
+                <div className="title-time-container">
+                  <h3>{t('expectations.slides.slide2.title')}</h3>
+                  <span className="time-indicator">{t('expectations.slides.slide2.time')}</span>
+                </div>
+                <ul className="expectation-bullet-list">
+                  <li>{t('expectations.slides.slide2.bullets.bullet1')}</li>
+                  <li>{t('expectations.slides.slide2.bullets.bullet2')}</li>
+                  <li>{t('expectations.slides.slide2.bullets.bullet3')}</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -130,8 +144,15 @@ const ExpectationsSection: React.FC = () => {
                 <img src="/assets/Expert-Supervision.jpg" alt="Training with expert supervision" />
               </div>
               <div className="expectation-content">
-                <h3>{t('expectations.slides.slide3.title')}</h3>
-                <p>{t('expectations.slides.slide3.text')}</p>
+                <div className="title-time-container">
+                  <h3>{t('expectations.slides.slide3.title')}</h3>
+                  <span className="time-indicator">{t('expectations.slides.slide3.time')}</span>
+                </div>
+                <ul className="expectation-bullet-list">
+                  <li>{t('expectations.slides.slide3.bullets.bullet1')}</li>
+                  <li>{t('expectations.slides.slide3.bullets.bullet2')}</li>
+                  <li>{t('expectations.slides.slide3.bullets.bullet3')}</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -142,8 +163,15 @@ const ExpectationsSection: React.FC = () => {
                 <img src="/assets/Recovery-and-Refuel.jpg" alt="Recovery and protein refuel" />
               </div>
               <div className="expectation-content">
-                <h3>{t('expectations.slides.slide4.title')}</h3>
-                <p>{t('expectations.slides.slide4.text')}</p>
+                <div className="title-time-container">
+                  <h3>{t('expectations.slides.slide4.title')}</h3>
+                  <span className="time-indicator">{t('expectations.slides.slide4.time')}</span>
+                </div>
+                <ul className="expectation-bullet-list">
+                  <li>{t('expectations.slides.slide4.bullets.bullet1')}</li>
+                  <li>{t('expectations.slides.slide4.bullets.bullet2')}</li>
+                  <li>{t('expectations.slides.slide4.bullets.bullet3')}</li>
+                </ul>
               </div>
             </div>
           </div>

@@ -1,12 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import '../styles/HeroSection.css';
 import { Button } from "@heroui/react";
-
-// Define a type that allows any translation key
-type TranslationFunction = {
-  (key: string): string;
-};
+import '../styles/HeroSection.css';
+import { TranslationFunction } from '../types/i18n';
 
 const HeroSection: React.FC = () => {
   // Cast the t function to use our custom type
@@ -35,21 +31,9 @@ const HeroSection: React.FC = () => {
         <h1 className="highlight">{t('hero.title2')}</h1>
         <p>{t('hero.subtitle')}</p>
         <Button
-          style={{
-            background: 'linear-gradient(to right, #005eb8, #00205b)',
-            color: 'white',
-            border: 'none',
-            borderRadius: '8px',
-            padding: '10px 24px',
-            fontSize: '16px',
-            fontWeight: 500,
-            boxShadow: '0 4px 14px 0 rgba(0, 94, 184, 0.39)',
-            cursor: 'pointer',
-            transition: 'opacity 0.2s ease, transform 0.2s ease'
-          }}
+          className="primary-button"
           radius="md"
-          onClick={(e: React.MouseEvent) => scrollToSection(e, 'pricing')}
-          className="nav-contact-button"
+          onClick={(e: React.MouseEvent) => scrollToSection(e, 'investment')}
         >
           {t('hero.cta')}
         </Button>

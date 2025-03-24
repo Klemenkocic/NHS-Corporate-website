@@ -1,96 +1,100 @@
 .cookies-banner {
   position: fixed;
   bottom: 20px;
+  left: 20px;
   right: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  padding: 10px 15px;
-  z-index: 9999;
-  max-width: 400px;
-  animation: slidein 0.5s ease-out;
-}
-
-@keyframes slidein {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  z-index: 1000;
 }
 
 .cookies-text {
-  font-size: 14px;
-  font-weight: 400;
-  color: white;
-  margin-right: 15px;
-  text-transform: none;
+  flex: 1;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #333;
 }
 
 .cookies-buttons {
   display: flex;
   gap: 10px;
-  margin-left: auto;
 }
 
 .cookies-button {
-  font-size: 12px;
+  padding: 8px 20px;
+  border-radius: 5px;
   font-weight: 500;
-  text-transform: uppercase;
-  padding: 6px 10px;
-  border: none;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
-}
-
-.cookies-button:hover {
-  transform: translateY(-1px);
+  transition: all 0.2s ease;
+  border: none;
+  font-size: 14px;
 }
 
 .cookies-accept {
-  background-color: #005eb8;
   color: white;
-}
-
-.cookies-accept:hover {
-  background-color: #0077e6;
 }
 
 .cookies-decline {
-  background-color: transparent;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #f0f0f0;
+  color: #333;
 }
 
 .cookies-decline:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: #e0e0e0;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .cookies-banner {
     flex-direction: column;
-    right: 10px;
-    left: 10px;
-    max-width: calc(100% - 20px);
+    padding: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
   }
   
   .cookies-text {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center;
   }
   
   .cookies-buttons {
-    margin-left: 0;
     width: 100%;
     justify-content: center;
+  }
+  
+  .cookies-button {
+    flex: 1;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cookies-banner {
+    padding: 12px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  
+  .cookies-text {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .cookies-buttons {
+    gap: 8px;
+  }
+  
+  .cookies-button {
+    padding: 8px 15px;
+    font-size: 13px;
   }
 }

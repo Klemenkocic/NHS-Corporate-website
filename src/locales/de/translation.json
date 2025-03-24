@@ -146,7 +146,8 @@
     "scrollIndicator": "Scrollen Sie zum Erkunden"
   },
   "clients": {
-    "title": "UNSERE KUNDEN"
+    "title": "UNSERE KUNDEN",
+    "subtitle": "Führungskräfte dieser Unternehmen haben unseren Coaches vertraut!"
   },
   "location": {
     "header1": "SO FINDEN",

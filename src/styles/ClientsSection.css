@@ -86,9 +86,9 @@
 }
 
 @media (max-width: 992px) {
-  .clients-logos {
+  .clients-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
   }
 }
 
@@ -99,6 +99,7 @@
   
   .clients-header h2 {
     font-size: 2rem;
+    margin-bottom: 30px;
   }
   
   .clients-subtext {
@@ -106,14 +107,13 @@
     margin-bottom: 25px;
   }
   
-  .clients-logos {
+  .clients-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   
   .client-logo {
     height: 100px;
-    padding: 15px;
   }
   
   .client-logo img {
@@ -121,27 +121,27 @@
   }
 }
 
-@media (max-width: 480px) {
-  .clients-logos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+@media (max-width: 576px) {
+  .clients-section {
+    padding: 40px 0;
   }
   
   .clients-header h2 {
     font-size: 1.8rem;
+    margin-bottom: 25px;
   }
   
-  .clients-subtext {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
   
   .client-logo {
     height: 80px;
-    padding: 12px;
+    padding: 15px;
   }
   
   .client-logo img {
-    max-height: 56px;
+    max-height: 50px;
   }
 } 

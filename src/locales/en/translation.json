@@ -144,7 +144,8 @@
     "scrollIndicator": "Scroll to explore"
   },
   "clients": {
-    "title": "OUR CLIENTS"
+    "title": "OUR CLIENTS",
+    "subtitle": "Executives from these companies have trusted our coaches!"
   },
   "location": {
     "header1": "HOW TO",

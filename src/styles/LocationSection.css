@@ -136,107 +136,62 @@
 @media (max-width: 992px) {
   .location-content {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
   
-  .map-container {
-    height: 400px;
+  .location-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .accessibility-box {
+    height: auto;
+    min-height: 350px;
   }
 }
 
 @media (max-width: 768px) {
   .location-section {
-    padding: 60px 0;
+    padding: 70px 0;
   }
   
   .location-header h2 {
     font-size: 2rem;
   }
   
-  .location-header p {
+  .location-subtext {
     font-size: 1rem;
-    margin-bottom: 30px;
   }
   
-  .location-content {
-    gap: 30px;
+  .accessibility-box h3 {
+    font-size: 1.5rem;
   }
   
-  .map-container {
-    height: 350px;
-  }
-  
-  .location-info h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-  }
-  
-  .info-list li {
-    font-size: 0.95rem;
-    margin-bottom: 15px;
-    padding-left: 30px;
-  }
-  
-  .info-list li:before {
-    font-size: 1.2rem;
-  }
-  
-  .location-address {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .location-section {
-    padding: 40px 0;
-  }
-  
-  .location-header {
-    margin-bottom: 30px;
-  }
-  
-  .location-header h2 {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
-  
-  .location-header h2.highlight {
-    margin-bottom: 15px;
-  }
-  
-  .location-header p {
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-  }
-  
-  .map-container {
-    height: 300px;
-    border-radius: 10px;
-  }
-  
-  .location-info h3 {
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-  }
-  
-  .location-address {
+  .accessibility-box p {
     font-size: 1rem;
-    margin-bottom: 15px;
   }
   
-  .info-list li {
-    font-size: 0.9rem;
-    margin-bottom: 12px;
-    padding-left: 25px;
-  }
-  
-  .info-list li:before {
+  .accessibility-features li {
     font-size: 1rem;
   }
   
   .tour-text {
-    font-size: 0.9rem;
-    margin-top: 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-section {
+    padding: 50px 0;
+  }
+  
+  .location-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .accessibility-box {
+    padding: 20px;
+  }
+  
+  .accessibility-features li {
+    font-size: 0.95rem;
   }
 } 

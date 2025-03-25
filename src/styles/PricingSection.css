@@ -315,24 +315,18 @@
 @media (max-width: 992px) {
   .pricing-plans {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
   
   .results-container {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
   
   .results-image img {
-    height: auto;
+    height: 350px;
   }
 }
 
-@media (max-width: 768px) {
-  .pricing-section {
-    padding: 60px 0;
-  }
-  
+@media (max-width: 576px) {
   .pricing-header h2 {
     font-size: 2rem;
   }
@@ -343,64 +337,5 @@
   
   .results-header h3 {
     font-size: 1.5rem;
-  }
-  
-  .results-sources-container {
-    justify-content: center;
-  }
-  
-  .card-content li {
-    font-size: 0.9rem;
-  }
-  
-  .card-header h3 {
-    font-size: 1.5rem;
-  }
-  
-  .card-price p {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .pricing-section {
-    padding: 40px 0;
-  }
-  
-  .pricing-header h2 {
-    font-size: 1.8rem;
-  }
-  
-  .pricing-card {
-    border-radius: 10px;
-  }
-  
-  .card-header {
-    padding: 20px 15px;
-  }
-  
-  .card-content {
-    padding: 20px 15px;
-  }
-  
-  .card-price {
-    padding: 15px;
-  }
-  
-  .card-action {
-    padding: 20px 15px;
-  }
-  
-  .result-item h4 {
-    font-size: 1.8rem;
-  }
-  
-  .result-item p {
-    font-size: 0.8rem;
-  }
-  
-  .pricing-results {
-    padding: 20px 15px;
-    margin-top: 40px;
   }
 } 

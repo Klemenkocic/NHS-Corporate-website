@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+/* Base styles for all devices */
+html, body {
+  width: 100%;
+  position: relative;
+}
+
 body, html {
   font-family: 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -21,6 +27,11 @@ body, html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* Section stacking rules */
+section {
+  position: relative;
 }
 
 .App-logo {
@@ -65,5 +76,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+}
+
+/* Make sure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Apply overflow-x: hidden only on mobile devices */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  /* Ensure proper vertical stacking on mobile */
+  section {
+    position: relative;
+    width: 100%;
+    clear: both;
+  }
+  
+  /* Remove specific spacing for clients section since we now handle this in the component CSS */
+  .clients-section {
+    margin-top: 0;
+  }
 }

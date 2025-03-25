@@ -124,86 +124,50 @@
 @media (max-width: 992px) {
   .contact-content {
     grid-template-columns: 1fr;
-    gap: 40px;
   }
   
-  .contact-form {
-    order: -1;
-  }
-  
-  .info-item {
-    margin-bottom: 20px;
+  .contact-header h2 {
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .contact-section {
-    padding: 60px 0;
+    padding: 70px 0;
   }
   
   .contact-header h2 {
     font-size: 2rem;
   }
   
-  .hours-grid {
-    grid-template-columns: 1fr 1fr;
+  .contact-header p {
+    font-size: 1.1rem;
+  }
+  
+  .contact-details h3 {
+    font-size: 1.3rem;
+  }
+  
+  .info-item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 50px 0;
+  }
+  
+  .contact-header h2 {
+    font-size: 1.8rem;
   }
   
   .contact-header p {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 576px) {
-  .contact-section {
-    padding: 40px 0;
-  }
   
-  .contact-header h2 {
-    font-size: 1.8rem;
-    line-height: 1.3;
-  }
-  
-  .contact-header h2.highlight {
-    margin-bottom: 15px;
-  }
-  
-  .contact-info-box, 
+  .contact-info-box,
   .hours-box {
-    padding: 20px 15px;
-  }
-  
-  .contact-info-box h3,
-  .hours-box h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-  }
-  
-  .info-item {
-    margin-bottom: 15px;
-  }
-  
-  .info-icon {
-    font-size: 1.2rem;
-    min-width: 25px;
-  }
-  
-  .info-item p {
-    font-size: 0.9rem;
-  }
-  
-  .hours-grid {
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-    text-align: left;
-  }
-  
-  .day {
-    font-weight: 600;
-    font-size: 0.9rem;
-  }
-  
-  .time {
-    font-size: 0.9rem;
+    padding: 20px;
   }
 } 

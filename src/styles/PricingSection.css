@@ -336,6 +336,82 @@
   }
   
   .results-header h3 {
+    font-size: 1.6rem;
+  }
+  
+  .card-header h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Add more specific breakpoints for smaller screens */
+@media (max-width: 480px) {
+  .pricing-header h2 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+  
+  .card-header h3 {
     font-size: 1.5rem;
+  }
+  
+  .results-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .result-item h4 {
+    font-size: 1.8rem;
+    margin-bottom: 3px;
+  }
+  
+  .result-item p {
+    font-size: 0.85rem;
+  }
+  
+  .card-content li {
+    font-size: 0.95rem;
+    padding: 10px 0 10px 25px;
+  }
+  
+  .card-price p {
+    font-size: 1.3rem;
+  }
+}
+
+/* iPhone and smaller devices */
+@media (max-width: 390px) {
+  .pricing-header h2 {
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .card-header h3 {
+    font-size: 1.4rem;
+  }
+  
+  .results-header h3 {
+    font-size: 1.4rem;
+  }
+  
+  .result-item h4 {
+    font-size: 1.6rem;
+  }
+  
+  .result-item p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+  
+  .card-content li {
+    font-size: 0.9rem;
+    padding: 8px 0 8px 22px;
+  }
+  
+  .card-price p {
+    font-size: 1.2rem;
+  }
+  
+  .pricing-section {
+    padding: 60px 0;
   }
 } 

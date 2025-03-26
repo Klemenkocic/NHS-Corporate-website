@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          <a href="#" onClick={scrollToTop}>
+          <a href="/" onClick={scrollToTop}>
             <img src="/assets/NHS Logo black-cropped.svg" alt="New Health Society Logo" className="navbar-logo-white" />
           </a>
         </div>
@@ -85,10 +85,15 @@ const Navbar: React.FC = () => {
               </Button>
             </li>
           </ul>
+          <div className="mobile-language-switcher">
+            <LanguageSwitcher />
+          </div>
         </div>
 
         <div className="mobile-menu-container">
-          <LanguageSwitcher />
+          <div className="desktop-language-switcher">
+            <LanguageSwitcher />
+          </div>
           <div className="menu-toggle" onClick={toggleMenu}>
             <div className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
               <span></span>

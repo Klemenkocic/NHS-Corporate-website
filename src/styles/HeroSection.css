@@ -83,4 +83,38 @@
   .hero-content p {
     font-size: 1.2rem;
   }
+}
+
+/* Add more specific breakpoints for smaller screens */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content {
+    padding: 15px;
+  }
+}
+
+/* iPhone and smaller devices */
+@media (max-width: 390px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .hero-content h1.highlight {
+    margin-bottom: 15px;
+  }
+  
+  .hero-content p {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+  }
 } 

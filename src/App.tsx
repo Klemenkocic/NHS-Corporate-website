@@ -8,7 +8,6 @@ import ExpectationsSection from './components/ExpectationsSection';
 import ClientsSection from './components/ClientsSection';
 import LocationSection from './components/LocationSection';
 import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
 import BlobBackground from './components/BlobBackground';
 import BackToTop from './components/BackToTop';
 import CookieConsent from './components/CookieConsent';
@@ -25,7 +24,6 @@ const App: React.FC = () => {
         <ClientsSection />
         <LocationSection />
         <ContactSection />
-        <Footer />
         <BackToTop />
         <CookieConsent />
       </div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import './i18n';
+import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import InvestmentSection from './components/PricingSection';
@@ -9,6 +10,7 @@ import ClientsSection from './components/ClientsSection';
 import LocationSection from './components/LocationSection';
 import ContactSection from './components/ContactSection';
 import BlobBackground from './components/BlobBackground';
+import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import CookieConsent from './components/CookieConsent';
 
@@ -45,6 +47,7 @@ const App: React.FC = () => {
     <>
       <BlobBackground />
       <div className="App">
+        <Navbar />
         <HeroSection />
         <AboutSection />
         <InvestmentSection />
@@ -52,6 +55,7 @@ const App: React.FC = () => {
         <ClientsSection />
         <LocationSection />
         <ContactSection />
+        <Footer />
         <BackToTop />
         <CookieConsent />
       </div>

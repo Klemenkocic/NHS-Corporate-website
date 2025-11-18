@@ -3,12 +3,15 @@ import './App.css';
 import './i18n';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import InvestmentSection from './components/PricingSection';
-import ExpectationsSection from './components/ExpectationsSection';
 import ClientsSection from './components/ClientsSection';
-import LocationSection from './components/LocationSection';
+import ChallengesSection from './components/ChallengesSection';
+import PromiseSection from './components/PromiseSection';
+import GoogleReviewsSection from './components/GoogleReviewsSection';
+import ExpectationsSection from './components/ExpectationsSection';
+import StepsSection from './components/StepsSection';
+import FacilityGallerySection from './components/FacilityGallerySection';
 import ContactSection from './components/ContactSection';
+import FinalCTASection from './components/FinalCTASection';
 import BlobBackground from './components/BlobBackground';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
@@ -49,11 +52,24 @@ const App: React.FC = () => {
       <div className="App">
         <Navbar />
         <HeroSection />
-        <AboutSection />
-        <InvestmentSection />
-        <ExpectationsSection />
         <ClientsSection />
-        <LocationSection />
+        <ChallengesSection />
+        <PromiseSection />
+        <GoogleReviewsSection />
+        <ExpectationsSection
+          sectionId="experience"
+          translationKey="landing.features.experience"
+        />
+        <FacilityGallerySection />
+        <StepsSection
+          sectionId="steps"
+          translationKey="landing.features.steps"
+        />
+        <ExpectationsSection
+          sectionId="transformations"
+          translationKey="landing.features.transformations"
+        />
+        <FinalCTASection />
         <ContactSection />
         <Footer />
         <BackToTop />

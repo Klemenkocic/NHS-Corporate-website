@@ -64,16 +64,16 @@ const Navbar: React.FC = () => {
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>{t('navbar.about')}</a>
+              <a href="#challenges" onClick={(e) => scrollToSection(e, 'challenges')}>{t('navbar.about')}</a>
             </li>
             <li className="nav-item">
-              <a href="#investment" onClick={(e) => scrollToSection(e, 'investment')}>{t('navbar.pricing')}</a>
+              <a href="#reviews" onClick={(e) => scrollToSection(e, 'reviews')}>{t('navbar.pricing')}</a>
             </li>
             <li className="nav-item">
-              <a href="#expectations" onClick={(e) => scrollToSection(e, 'expectations')}>{t('navbar.whatToExpect')}</a>
+              <a href="#steps" onClick={(e) => scrollToSection(e, 'steps')}>{t('navbar.whatToExpect')}</a>
             </li>
             <li className="nav-item">
-              <a href="#location" onClick={(e) => scrollToSection(e, 'location')}>{t('navbar.location')}</a>
+              <a href="#facility" onClick={(e) => scrollToSection(e, 'facility')}>{t('navbar.location')}</a>
             </li>
             <li className="nav-item nav-cta">
               <Button

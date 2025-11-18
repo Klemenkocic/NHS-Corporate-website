@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="hero-section">
+    <section id="hero" className="hero-section">
       <div className="video-container">
         <video autoPlay loop muted playsInline className="hero-video">
           <source src="/assets/Website-Video.m4v" type="video/mp4" />

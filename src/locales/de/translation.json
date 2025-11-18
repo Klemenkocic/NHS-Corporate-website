@@ -1,16 +1,16 @@
 {
   "navbar": {
-    "about": "Über uns",
-    "pricing": "Investition",
-    "whatToExpect": "Was Sie erwartet",
-    "location": "Standort",
+    "about": "Programm",
+    "pricing": "Erfolge",
+    "whatToExpect": "Ablauf",
+    "location": "Studio",
     "contactUs": "Kontakt"
   },
   "hero": {
-    "title1": "REVOLUTIONIERUNG",
-    "title2": "DER BETRIEBLICHEN GESUNDHEIT",
-    "subtitle": "STEIGERUNG VON LEISTUNG, GESUNDHEIT & ROI",
-    "cta": "Investition"
+    "title1": "WERDE IN NUR 4 MONATEN SICHTBAR FITTER, SCHLANKER UND ENERGIEGELADENER",
+    "title2": "MIT UNSEREM INDIVIDUELLEN 1:1 COACHING",
+    "subtitle": "Für Unternehmer & Führungskräfte, die trotz vollem Kalender sichtbare Resultate wollen.",
+    "cta": "Jetzt Beratung buchen"
   },
   "about": {
     "header1": "DIE KOSTSPIELIGEN AUSWIRKUNGEN VON",
@@ -147,7 +147,208 @@
   },
   "clients": {
     "title": "UNSERE KUNDEN",
-    "subtitle": "Führungskräfte dieser Unternehmen haben unseren Coaches vertraut!"
+    "subtitle": "Diese Unternehmen vertrauen bereits auf unser Coaching"
+  },
+  "landing": {
+    "challenges": {
+      "eyebrow": "DEINE AUSGANGSLAGE",
+      "title": "Die meisten Unternehmer & Führungskräfte erkennen sich hier wieder",
+      "subtitle": "Hoher Druck, lange Tage und kaum Zeit für dich selbst? Diese Herausforderungen kennen wir von unseren Kunden.",
+      "cards": [
+        {
+          "title": "RÜCKEN- & GELENKSCHMERZEN",
+          "description": "Sitzender Alltag, Stress und fehlende Mobilität führen zu Dauerschmerzen und schränken deine Leistungsfähigkeit ein."
+        },
+        {
+          "title": "ENERGIELOCH TROTZ SPORT",
+          "description": "Du trainierst, siehst aber keine Ergebnisse? Ohne Plan und klare Struktur bleiben Fortschritte aus."
+        },
+        {
+          "title": "FEHLENDE ROUTINE",
+          "description": "Termine, Geschäftsreisen, Familie: Dein Kalender ist voll – ein Training, das sich flexibel anpasst, fehlt."
+        },
+        {
+          "title": "KEINE INDIVIDUELLE BETREUUNG",
+          "description": "Standard-Fitnessprogramme passen nicht zu deinem Anspruch und Tempo."
+        }
+      ]
+    },
+    "promise": {
+      "eyebrow": "UNSER VERSPRECHEN",
+      "title": "Wir entwickeln mit dir einen individuellen Fahrplan",
+      "subtitle": "Ein System, das dich Schritt für Schritt an dein Ziel bringt – messbar und planbar.",
+      "body": "Gemeinsam analysieren wir deine aktuelle Situation, bauen auf deinen Stärken auf und eliminieren Blockaden. Du erhältst ein klares System aus Training, Ernährung und Regeneration, das in deinen anspruchsvollen Alltag passt.",
+      "highlightTitle": "Keine Theorie – nur Resultate.",
+      "highlightSubtitle": "Wir begleiten dich persönlich, bis du dort bist, wo du hinwillst."
+    },
+    "reviews": {
+      "eyebrow": "BEWERTUNGEN",
+      "title": "100% persönliche Betreuung – bestätigt von unseren Kunden",
+      "subtitle": "Echte Google-Bewertungen von Unternehmern und Entscheidern, die bereits mit uns arbeiten.",
+      "ratingLabel": "Google Rating",
+      "ratingSub": "Basierend auf echten Kunden",
+      "loading": "Bewertungen werden geladen …",
+      "error": "Bewertungen konnten nicht geladen werden.",
+      "missingApiKey": "Bitte hinterlege deinen Google-API-Schlüssel.",
+      "viewOnGoogle": "Auf Google lesen"
+    },
+    "features": {
+      "experience": {
+        "title": "Erlebe ein unvergleichliches Trainingserlebnis",
+        "subtitle": "100% individuelle Betreuung ohne Wartezeiten oder blockierte Geräte.",
+        "scrollIndicator": "Scroll für mehr Einblicke",
+        "slides": [
+          {
+            "title": "Individuelles Coaching",
+            "time": "1:1 Fokus",
+            "image": "/assets/Expert-Supervision.jpg",
+            "alt": "Personal Coaching",
+            "bullets": [
+              "Persönliche Betreuung in jeder Einheit",
+              "Messbare Fortschritte dank individueller Planung",
+              "Jeder Termin passt in deinen Kalender"
+            ]
+          },
+          {
+            "title": "Modernstes Equipment",
+            "time": "Private Sessions",
+            "image": "/assets/gym.jpg",
+            "alt": "Modernes Gym",
+            "bullets": [
+              "300 m² Premium-Gym in München",
+              "Trainiere ohne Wartezeiten & fremde Blicke",
+              "Höchste Standards bei Equipment & Ambiente"
+            ]
+          },
+          {
+            "title": "Erfahrene Trainer",
+            "time": "15+ Jahre Coaching",
+            "image": "/assets/Group-Arrival.jpg",
+            "alt": "Trainer Team",
+            "bullets": [
+              "Coaches mit Athleten- & Unternehmer-Erfahrung",
+              "Wir kennen deinen Alltag und sprechen deine Sprache",
+              "Volle Verantwortung für dein Ergebnis"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "title": "Unser 6-Schritte-Plan zu maximalem Erfolg",
+        "subtitle": "Ein klarer Ablauf, der dich von Tag eins an durch den Prozess führt.",
+        "scrollIndicator": "Scroll durch die Schritte",
+        "slides": [
+          {
+            "title": "1 · Tiefenanalyse",
+            "image": "/assets/Preparation-and-Partnering.jpg",
+            "alt": "Analyse",
+            "bullets": [
+              "Status-Check von Körper, Alltag & Zielen",
+              "Biometrische Messungen & Bewegungsanalyse",
+              "Definiere dein persönliches Zielbild"
+            ]
+          },
+          {
+            "title": "2 · Individueller Plan",
+            "image": "/assets/Expert-Supervision.jpg",
+            "alt": "Plan",
+            "bullets": [
+              "Trainings- & Ernährungsplan abgestimmt auf dich",
+              "Struktur für Wochenplanung & Regeneration",
+              "Ständige Anpassung nach Fortschritt"
+            ]
+          },
+          {
+            "title": "3 · Persönliche Sessions",
+            "image": "/assets/Group-Arrival.jpg",
+            "alt": "Session",
+            "bullets": [
+              "1:1 Coaching mit maximaler Aufmerksamkeit",
+              "Private Slots ohne Ablenkung",
+              "Fokus auf Technik & Intensität"
+            ]
+          },
+          {
+            "title": "4 · Performance Tracking",
+            "image": "/assets/ROI.jpg",
+            "alt": "Tracking",
+            "bullets": [
+              "Professionelle Messungen & Feedback",
+              "Anpassungen nach jeder Phase",
+              "Transparente Fortschrittsberichte"
+            ]
+          },
+          {
+            "title": "5 · Integration in den Alltag",
+            "image": "/assets/Recovery-and-Refuel.jpg",
+            "alt": "Integration",
+            "bullets": [
+              "Routinen, die zu deinem Leben passen",
+              "Tools für Ernährung & Regeneration unterwegs",
+              "Coaching auch zwischen den Sessions"
+            ]
+          },
+          {
+            "title": "6 · Ergebnis sichern",
+            "image": "/assets/Expert-Supervision.jpg",
+            "alt": "Ergebnis",
+            "bullets": [
+              "Nachhaltige Strategien statt Jo-Jo-Effekt",
+              "Langfristige Begleitung möglich",
+              "Wir bleiben an deiner Seite"
+            ]
+          }
+        ]
+      },
+      "transformations": {
+        "title": "Transformationen, die für sich sprechen",
+        "subtitle": "Unternehmer, die genau dort standen, wo du heute stehst.",
+        "scrollIndicator": "Scroll und sieh die Veränderungen",
+        "slides": [
+          {
+            "title": "Tilo · -8 kg Körperfett",
+            "image": "/assets/Group-Arrival.jpg",
+            "alt": "Transformation 1",
+            "bullets": [
+              "6 Monate Programm",
+              "Weniger Rückenschmerzen & mehr Energie",
+              "Spürbar mehr Leistungsfähigkeit im Beruf"
+            ]
+          },
+          {
+            "title": "Lukas · +6 kg Muskelaufbau",
+            "image": "/assets/Expert-Supervision.jpg",
+            "alt": "Transformation 2",
+            "bullets": [
+              "Strukturierter Plan trotz 60h-Woche",
+              "Messbare Fortschritte alle 4 Wochen",
+              "Mehr Selbstvertrauen & Fokus"
+            ]
+          },
+          {
+            "title": "Florian · Definierter Körper",
+            "image": "/assets/Recovery-and-Refuel.jpg",
+            "alt": "Transformation 3",
+            "bullets": [
+              "Klares Zielbild & Accountability",
+              "Verbesserte Ausdauer und weniger Stress",
+              "Neue Energie für Business & Familie"
+            ]
+          }
+        ]
+      }
+    },
+    "facility": {
+      "eyebrow": "DEIN GYM IN MÜNCHEN",
+      "title": "Trainiere dort, wo Ergebnisse entstehen",
+      "subtitle": "Privates 300 m² Premium-Gym mit allem, was du für deine Transformation brauchst."
+    },
+    "finalCta": {
+      "eyebrow": "BEREIT FÜR DEN NÄCHSTEN SCHRITT?",
+      "title": "Finde heraus, welches System für dich funktioniert.",
+      "subtitle": "Buche eine unverbindliche Beratung und erlebe, wie dein Plan aussehen kann.",
+      "cta": "Jetzt Termin sichern"
+    }
   },
   "location": {
     "header1": "SO FINDEN",

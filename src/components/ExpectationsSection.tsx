@@ -4,17 +4,26 @@ import '../styles/ExpectationsSection.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-// Define a type that allows any translation key
-type TranslationFunction = {
-  (key: string): string;
-};
-
-// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
-const ExpectationsSection: React.FC = () => {
-  // Cast the t function to use our custom type
-  const { t } = useTranslation() as { t: TranslationFunction };
+export interface FeatureSlide {
+  title: string;
+  time?: string;
+  image: string;
+  alt: string;
+  bullets: string[];
+}
+
+interface FeatureSectionProps {
+  sectionId: string;
+  translationKey: string;
+}
+
+const ExpectationsSection: React.FC<FeatureSectionProps> = ({
+  sectionId,
+  translationKey
+}) => {
+  const { t } = useTranslation();
   
   const sectionRef = useRef<HTMLElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
@@ -47,11 +56,17 @@ const ExpectationsSection: React.FC = () => {
       
       // Make sure all refs are available
       if (!sectionRef.current || !triggerRef.current || !horizontalRef.current) return null;
-      
+
       const horizontal = horizontalRef.current;
-      
+
       // Calculate the width of the horizontal scroll content
-      const horizontalWidth = horizontal.scrollWidth - window.innerWidth;
+      const getScrollAmount = () => {
+        const totalWidth = horizontal.scrollWidth;
+        const viewportWidth = window.innerWidth;
+        return totalWidth - viewportWidth;
+      };
+
+      const horizontalWidth = getScrollAmount();
 
       // Create the horizontal scroll animation
       return gsap.to(horizontal, {
@@ -124,61 +139,21 @@ const ExpectationsSection: React.FC = () => {
     };
   }, [isMobile]);
 
-  // Slide data array to use for both desktop and mobile
-  const slides = [
-    {
-      title: t('expectations.slides.slide1.title'),
-      time: t('expectations.slides.slide1.time'),
-      image: "/assets/Group-Arrival.jpg",
-      alt: "Group arrival at facility",
-      bullets: [
-        t('expectations.slides.slide1.bullets.bullet1'),
-        t('expectations.slides.slide1.bullets.bullet2'),
-        t('expectations.slides.slide1.bullets.bullet3')
-      ]
-    },
-    {
-      title: t('expectations.slides.slide2.title'),
-      time: t('expectations.slides.slide2.time'),
-      image: "/assets/Preparation-and-Partnering.jpg",
-      alt: "Custom training plan",
-      bullets: [
-        t('expectations.slides.slide2.bullets.bullet1'),
-        t('expectations.slides.slide2.bullets.bullet2'),
-        t('expectations.slides.slide2.bullets.bullet3')
-      ]
-    },
-    {
-      title: t('expectations.slides.slide3.title'),
-      time: t('expectations.slides.slide3.time'),
-      image: "/assets/Expert-Supervision.jpg",
-      alt: "Training with expert supervision",
-      bullets: [
-        t('expectations.slides.slide3.bullets.bullet1'),
-        t('expectations.slides.slide3.bullets.bullet2'),
-        t('expectations.slides.slide3.bullets.bullet3')
-      ]
-    },
-    {
-      title: t('expectations.slides.slide4.title'),
-      time: t('expectations.slides.slide4.time'),
-      image: "/assets/Recovery-and-Refuel.jpg",
-      alt: "Recovery and protein refuel",
-      bullets: [
-        t('expectations.slides.slide4.bullets.bullet1'),
-        t('expectations.slides.slide4.bullets.bullet2'),
-        t('expectations.slides.slide4.bullets.bullet3')
-      ]
-    }
-  ];
+  const slides = (t as any)(`${translationKey}.slides`, {
+    returnObjects: true
+  }) as FeatureSlide[];
+
+  const title = (t as any)(`${translationKey}.title`);
+  const subtitle = (t as any)(`${translationKey}.subtitle`);
+  const scrollIndicator = (t as any)(`${translationKey}.scrollIndicator`);
 
   // Render desktop version with horizontal scrolling
   const renderDesktopVersion = () => (
-    <section ref={sectionRef} id="expectations" className="expectations-section">
+    <section ref={sectionRef} id={sectionId} className="expectations-section">
       <div ref={triggerRef} className="expectations-trigger">
         <div className="expectations-header">
-          <h2>{t('expectations.title')}</h2>
-          <p>{t('expectations.subtitle')}</p>
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
         </div>
         
         <div ref={horizontalRef} className="expectations-horizontal">
@@ -205,18 +180,20 @@ const ExpectationsSection: React.FC = () => {
         </div>
       </div>
       
-      <div className="scroll-indicator">
-        <span>{t('expectations.scrollIndicator')}</span>
-      </div>
+      {scrollIndicator && (
+        <div className="scroll-indicator">
+          <span>{scrollIndicator}</span>
+        </div>
+      )}
     </section>
   );
 
   // Render mobile version with vertical stacking
   const renderMobileVersion = () => (
-    <section id="expectations" className="expectations-section mobile-section">
+    <section id={sectionId} className="expectations-section mobile-section">
       <div className="expectations-header">
-        <h2>{t('expectations.title')}</h2>
-        <p>{t('expectations.subtitle')}</p>
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
       </div>
       
       <div className="mobile-expectations-container">

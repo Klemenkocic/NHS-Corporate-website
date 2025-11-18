@@ -1,16 +1,16 @@
 {
   "navbar": {
-    "about": "About",
-    "pricing": "Investment",
-    "whatToExpect": "What to Expect",
-    "location": "Location",
+    "about": "Program",
+    "pricing": "Results",
+    "whatToExpect": "Process",
+    "location": "Facility",
     "contactUs": "Contact Us"
   },
   "hero": {
-    "title1": "REVOLUTIONIZING",
-    "title2": "CORPORATE WELLNESS",
-    "subtitle": "ENHANCING PERFORMANCE, HEALTH, & PRODUCTIVITY",
-    "cta": "Investment"
+    "title1": "BECOME VISIBLY FITTER, LEANER AND MORE ENERGETIC IN JUST 4 MONTHS",
+    "title2": "WITH OUR BESPOKE 1:1 COACHING",
+    "subtitle": "Designed for executives who want visible results despite a packed calendar.",
+    "cta": "Book consultation"
   },
   "about": {
     "header1": "THE COSTLY IMPACT OF",
@@ -145,7 +145,208 @@
   },
   "clients": {
     "title": "OUR CLIENTS",
-    "subtitle": "Executives from these companies have trusted our coaches!"
+    "subtitle": "Leaders from these companies trust our coaching"
+  },
+  "landing": {
+    "challenges": {
+      "eyebrow": "YOUR STARTING POINT",
+      "title": "Most founders & executives recognise themselves here",
+      "subtitle": "High demands, long days and little time for yourself? These are the challenges we solve every day.",
+      "cards": [
+        {
+          "title": "BACK & JOINT PAIN",
+          "description": "A sedentary lifestyle, stress and poor mobility lead to chronic pain and limit your performance."
+        },
+        {
+          "title": "NO ENERGY DESPITE TRAINING",
+          "description": "You work out but see no change? Without structure and accountability, progress stalls."
+        },
+        {
+          "title": "NO ROUTINE",
+          "description": "Meetings, travel, family: your calendar is packed and flexible coaching is missing."
+        },
+        {
+          "title": "GENERIC PROGRAMS",
+          "description": "Standard fitness concepts don’t match your pace, ambition or lifestyle."
+        }
+      ]
+    },
+    "promise": {
+      "eyebrow": "OUR PROMISE",
+      "title": "We build a personalised roadmap with you",
+      "subtitle": "A system that takes you to your goal step by step – measurable and predictable.",
+      "body": "Together we analyse where you stand, remove blockers and design a plan that works in your demanding schedule. Training, nutrition and recovery follow one clear structure.",
+      "highlightTitle": "No theory – just results.",
+      "highlightSubtitle": "We stay next to you until you arrive at your destination."
+    },
+    "reviews": {
+      "eyebrow": "REVIEWS",
+      "title": "100% personal coaching – confirmed by our clients",
+      "subtitle": "Live Google reviews from entrepreneurs already training with us.",
+      "ratingLabel": "Google Rating",
+      "ratingSub": "Based on verified clients",
+      "loading": "Loading reviews…",
+      "error": "Reviews could not be loaded.",
+      "missingApiKey": "Please provide your Google API key.",
+      "viewOnGoogle": "View on Google"
+    },
+    "features": {
+      "experience": {
+        "title": "Experience unforgettable training",
+        "subtitle": "100% individual coaching without waiting lines or crowded rooms.",
+        "scrollIndicator": "Scroll to explore",
+        "slides": [
+          {
+            "title": "Personal Coaching",
+            "time": "1:1 focus",
+            "image": "/assets/Expert-Supervision.jpg",
+            "alt": "Personal coaching",
+            "bullets": [
+              "High-touch coaching every session",
+              "Measurable progress through tailored planning",
+              "Each appointment fits your calendar"
+            ]
+          },
+          {
+            "title": "State-of-the-art equipment",
+            "time": "Private sessions",
+            "image": "/assets/gym.jpg",
+            "alt": "Modern gym",
+            "bullets": [
+              "300 m² premium gym in Munich",
+              "No waiting times, no distractions",
+              "Top-tier equipment and atmosphere"
+            ]
+          },
+          {
+            "title": "Experienced trainers",
+            "time": "15+ years",
+            "image": "/assets/Group-Arrival.jpg",
+            "alt": "Coaching team",
+            "bullets": [
+              "Coaches with athlete & executive background",
+              "We understand your lifestyle",
+              "Full accountability for your results"
+            ]
+          }
+        ]
+      },
+      "steps": {
+        "title": "Our 6-step plan for maximum success",
+        "subtitle": "A clear process guiding you from day one.",
+        "scrollIndicator": "Scroll through the steps",
+        "slides": [
+          {
+            "title": "1 · Deep analysis",
+            "image": "/assets/Preparation-and-Partnering.jpg",
+            "alt": "Analysis",
+            "bullets": [
+              "Status check of body, lifestyle and goals",
+              "Biometric testing & movement screening",
+              "Define your precise goal"
+            ]
+          },
+          {
+            "title": "2 · Personal plan",
+            "image": "/assets/Expert-Supervision.jpg",
+            "alt": "Plan",
+            "bullets": [
+              "Training & nutrition plan tailored to you",
+              "Weekly structure plus regeneration",
+              "Adjustments based on progress"
+            ]
+          },
+          {
+            "title": "3 · Personal sessions",
+            "image": "/assets/Group-Arrival.jpg",
+            "alt": "Session",
+            "bullets": [
+              "1:1 coaching with full focus",
+              "Private slots without distractions",
+              "Precision on technique & intensity"
+            ]
+          },
+          {
+            "title": "4 · Performance tracking",
+            "image": "/assets/ROI.jpg",
+            "alt": "Tracking",
+            "bullets": [
+              "Professional measurements & feedback",
+              "Adjustments after every phase",
+              "Transparent progress reports"
+            ]
+          },
+          {
+            "title": "5 · Integration",
+            "image": "/assets/Recovery-and-Refuel.jpg",
+            "alt": "Integration",
+            "bullets": [
+              "Habits that work with your schedule",
+              "Tools for nutrition & recovery on the go",
+              "Coaching between sessions"
+            ]
+          },
+          {
+            "title": "6 · Secure the result",
+            "image": "/assets/Expert-Supervision.jpg",
+            "alt": "Result",
+            "bullets": [
+              "Sustainable strategy instead of yo-yo",
+              "Long-term partnership available",
+              "We stay by your side"
+            ]
+          }
+        ]
+      },
+      "transformations": {
+        "title": "Transformations that speak for themselves",
+        "subtitle": "Entrepreneurs who stood exactly where you are now.",
+        "scrollIndicator": "Scroll to see their change",
+        "slides": [
+          {
+            "title": "Tilo · -8 kg body fat",
+            "image": "/assets/Group-Arrival.jpg",
+            "alt": "Transformation 1",
+            "bullets": [
+              "6 month program",
+              "Less back pain & more energy",
+              "Higher capacity for business"
+            ]
+          },
+          {
+            "title": "Lukas · +6 kg lean mass",
+            "image": "/assets/Expert-Supervision.jpg",
+            "alt": "Transformation 2",
+            "bullets": [
+              "Structured plan despite 60h weeks",
+              "Visible progress every 4 weeks",
+              "More confidence & focus"
+            ]
+          },
+          {
+            "title": "Florian · Defined physique",
+            "image": "/assets/Recovery-and-Refuel.jpg",
+            "alt": "Transformation 3",
+            "bullets": [
+              "Clear goal & accountability",
+              "Improved endurance and less stress",
+              "New energy for business & family"
+            ]
+          }
+        ]
+      }
+    },
+    "facility": {
+      "eyebrow": "YOUR GYM IN MUNICH",
+      "title": "Train where results are created",
+      "subtitle": "Private 300 m² premium gym with everything you need for your transformation."
+    },
+    "finalCta": {
+      "eyebrow": "READY FOR THE NEXT STEP?",
+      "title": "Find out which system works for you.",
+      "subtitle": "Book a consultation and discover how your plan could look.",
+      "cta": "Secure your spot"
+    }
   },
   "location": {
     "header1": "HOW TO",

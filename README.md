@@ -33,6 +33,17 @@ src/
    ```
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Environment Variables
+
+Add a `.env.local` file with the following keys to enable live Google reviews:
+
+```
+REACT_APP_GOOGLE_PLACES_API_KEY=your-google-places-api-key
+REACT_APP_GOOGLE_PLACE_ID=ChIJ39twPwB1nkcRlt7w_DSf9Bg
+```
+
+Restrict the key to your domains inside the Google Cloud console.
+
 ## Available Scripts
 
 - `npm start` - Runs the app in development mode

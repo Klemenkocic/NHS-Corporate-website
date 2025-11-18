@@ -20,7 +20,7 @@ const ClientsSection: React.FC = () => {
   ];
 
   return (
-    <section className="clients-section">
+    <section id="clients" className="clients-section">
       <div className="clients-container">
         <div className="clients-header">
           <h2>{t('clients.title')}</h2>

@@ -27,8 +27,7 @@ const HeroSection: React.FC = () => {
         <div className="overlay"></div>
       </div>
       <div className="hero-content">
-        <h1>{t('hero.title1')}</h1>
-        <h1 className="highlight">{t('hero.title2')}</h1>
+        <h1>{t('hero.title')}</h1>
         <p>{t('hero.subtitle')}</p>
         <Button
           className="primary-button"

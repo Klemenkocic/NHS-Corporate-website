@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ClientsSection from './components/ClientsSection';
 import ChallengesSection from './components/ChallengesSection';
-import PromiseSection from './components/PromiseSection';
 import GoogleReviewsSection from './components/GoogleReviewsSection';
 import ExpectationsSection from './components/ExpectationsSection';
 import StepsSection from './components/StepsSection';
@@ -54,7 +53,6 @@ const App: React.FC = () => {
         <HeroSection />
         <ClientsSection />
         <ChallengesSection />
-        <PromiseSection />
         <GoogleReviewsSection />
         <ExpectationsSection
           sectionId="experience"

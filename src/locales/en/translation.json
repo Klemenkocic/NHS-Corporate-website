@@ -7,9 +7,8 @@
     "contactUs": "Contact Us"
   },
   "hero": {
-    "title1": "BECOME VISIBLY FITTER, LEANER AND MORE ENERGETIC IN JUST 4 MONTHS",
-    "title2": "WITH OUR BESPOKE 1:1 COACHING",
-    "subtitle": "Designed for executives who want visible results despite a packed calendar.",
+    "title": "BECOME VISIBLY FITTER, LEANER AND MORE ENERGETIC IN JUST 4 MONTHS WITH OUR BESPOKE 1:1 COACHING",
+    "subtitle": "For entrepreneurs & executives who are tired of overcrowded gyms, diets and training without results and finally want a system that fits into their daily life.",
     "cta": "Book consultation"
   },
   "about": {
@@ -149,25 +148,33 @@
   },
   "landing": {
     "challenges": {
-      "eyebrow": "YOUR STARTING POINT",
-      "title": "Most founders & executives recognise themselves here",
-      "subtitle": "High demands, long days and little time for yourself? These are the challenges we solve every day.",
+      "eyebrow": "",
+      "title": "Most entrepreneurs & executives realise too late what their body has been signalling for years.",
+      "subtitle": "And this leads to the following problems.",
       "cards": [
         {
-          "title": "BACK & JOINT PAIN",
-          "description": "A sedentary lifestyle, stress and poor mobility lead to chronic pain and limit your performance."
+          "title": "Lack of Energy",
+          "description": "Do you feel drained all day long? The battery is empty, but you still have to deliver."
         },
         {
-          "title": "NO ENERGY DESPITE TRAINING",
-          "description": "You work out but see no change? Without structure and accountability, progress stalls."
+          "title": "Fatigue",
+          "description": "Do you wake up as if you hadn't slept at all? The day starts already behind schedule."
         },
         {
-          "title": "NO ROUTINE",
-          "description": "Meetings, travel, family: your calendar is packed and flexible coaching is missing."
+          "title": "Packed Schedule",
+          "description": "You want to fit in exercise – but the day simply has no more room? Every week passes without progress."
         },
         {
-          "title": "GENERIC PROGRAMS",
-          "description": "Standard fitness concepts don’t match your pace, ambition or lifestyle."
+          "title": "No Results",
+          "description": "You've tried everything – apps, plans, protein shakes – but nothing really changes your body?"
+        },
+        {
+          "title": "Countless Routines",
+          "description": "You've tried multiple times – but no routine sticks? Discipline doesn't fail you, the system does."
+        },
+        {
+          "title": "Loss of Productivity",
+          "description": "Your lack of concentration and focus costs you several thousand euros per year."
         }
       ]
     },
@@ -180,53 +187,54 @@
       "highlightSubtitle": "We stay next to you until you arrive at your destination."
     },
     "reviews": {
-      "eyebrow": "REVIEWS",
-      "title": "100% personal coaching – confirmed by our clients",
-      "subtitle": "Live Google reviews from entrepreneurs already training with us.",
+      "eyebrow": "",
+      "title": "Do you recognise yourself in this? Then it's important that you understand one thing: the mistake is not yours!",
+      "subtitle": "You've simply been missing a system that fits your life.",
+      "subtitle2": "We develop an individual roadmap that takes you to your goal step by step.",
       "ratingLabel": "Google Rating",
       "ratingSub": "Based on verified clients",
       "loading": "Loading reviews…",
       "error": "Reviews could not be loaded.",
       "missingApiKey": "Please provide your Google API key.",
-      "viewOnGoogle": "View on Google"
+      "viewOnGoogle": "View on Google",
+      "cta": "Book consultation"
     },
     "features": {
       "experience": {
-        "title": "Experience unforgettable training",
-        "subtitle": "100% individual coaching without waiting lines or crowded rooms.",
+        "title": "Experience unforgettable training with 100% individual support without waiting times & occupied equipment.",
+        "subtitle": "",
         "scrollIndicator": "Scroll to explore",
         "slides": [
           {
-            "title": "Personal Coaching",
+            "title": "Individually tailored training concept.",
             "time": "1:1 focus",
             "image": "/assets/Expert-Supervision.jpg",
             "alt": "Personal coaching",
             "bullets": [
-              "High-touch coaching every session",
-              "Measurable progress through tailored planning",
-              "Each appointment fits your calendar"
+              "We place special emphasis on 1:1 support to help you reach your goal as quickly as possible.",
+              "Therefore, top-trained coaches are always by your side during your training, going through your individual training plan with you."
             ]
           },
           {
-            "title": "State-of-the-art equipment",
+            "title": "Training in the most modern gym with the best equipment.",
             "time": "Private sessions",
             "image": "/assets/gym.jpg",
             "alt": "Modern gym",
             "bullets": [
-              "300 m² premium gym in Munich",
-              "No waiting times, no distractions",
-              "Top-tier equipment and atmosphere"
+              "We want only the best for you!",
+              "Therefore, a fully equipped gym with state-of-the-art equipment awaits you.",
+              "You get everything you need from us."
             ]
           },
           {
-            "title": "Experienced trainers",
+            "title": "Top-trained coaches with years of experience.",
             "time": "15+ years",
             "image": "/assets/Group-Arrival.jpg",
             "alt": "Coaching team",
             "bullets": [
-              "Coaches with athlete & executive background",
-              "We understand your lifestyle",
-              "Full accountability for your results"
+              "An experienced trainer is by your side the whole time.",
+              "Whether with training exercises or nutrition plans.",
+              "With us, you are always in the best hands!"
             ]
           }
         ]
@@ -237,109 +245,100 @@
         "scrollIndicator": "Scroll through the steps",
         "slides": [
           {
-            "title": "1 · Deep analysis",
+            "title": "1 | INITIAL CONSULTATION",
             "image": "/assets/Preparation-and-Partnering.jpg",
             "alt": "Analysis",
             "bullets": [
-              "Status check of body, lifestyle and goals",
-              "Biometric testing & movement screening",
-              "Define your precise goal"
+              "We take a close look at your situation, perform a mobility analysis and establish your common goals together."
             ]
           },
           {
-            "title": "2 · Personal plan",
+            "title": "2 | INDIVIDUAL TRAINING PLAN",
             "image": "/assets/Expert-Supervision.jpg",
             "alt": "Plan",
             "bullets": [
-              "Training & nutrition plan tailored to you",
-              "Weekly structure plus regeneration",
-              "Adjustments based on progress"
+              "We create your individual training plan. This is based on sports science principles and is continuously adjusted."
             ]
           },
           {
-            "title": "3 · Personal sessions",
+            "title": "3 | ONE-ON-ONE TRAINING",
             "image": "/assets/Group-Arrival.jpg",
             "alt": "Session",
             "bullets": [
-              "1:1 coaching with full focus",
-              "Private slots without distractions",
-              "Precision on technique & intensity"
+              "You train with your coach in our exclusive studio. Our high-end equipment ensures maximum training success."
             ]
           },
           {
-            "title": "4 · Performance tracking",
+            "title": "4 | PROGRESS CHECKS",
             "image": "/assets/ROI.jpg",
             "alt": "Tracking",
             "bullets": [
-              "Professional measurements & feedback",
-              "Adjustments after every phase",
-              "Transparent progress reports"
+              "Monthly check-ins document your development and ensure individual adjustments."
             ]
           },
           {
-            "title": "5 · Integration",
+            "title": "5 | NUTRITION & RECOVERY",
             "image": "/assets/Recovery-and-Refuel.jpg",
             "alt": "Integration",
             "bullets": [
-              "Habits that work with your schedule",
-              "Tools for nutrition & recovery on the go",
-              "Coaching between sessions"
+              "We provide you with personalized nutrition recommendations, advise you on supplements and all essential nutrients during and after training. You don't have to worry about anything."
             ]
           },
           {
-            "title": "6 · Secure the result",
+            "title": "6 | ONGOING ADJUSTMENTS",
             "image": "/assets/Expert-Supervision.jpg",
             "alt": "Result",
             "bullets": [
-              "Sustainable strategy instead of yo-yo",
-              "Long-term partnership available",
-              "We stay by your side"
+              "To keep your progress going, we adjust your training and nutrition every three weeks. This allows us to optimize specific areas in training or nutrition."
             ]
           }
         ]
       },
       "transformations": {
-        "title": "Transformations that speak for themselves",
-        "subtitle": "Entrepreneurs who stood exactly where you are now.",
+        "title": "We have already helped over 100 clients achieve their dream body and build more energy.",
+        "subtitle": "These people stood exactly where you are now.",
         "scrollIndicator": "Scroll to see their change",
         "slides": [
           {
-            "title": "Tilo · -8 kg body fat",
-            "image": "/assets/Group-Arrival.jpg",
-            "alt": "Transformation 1",
-            "bullets": [
-              "6 month program",
-              "Less back pain & more energy",
-              "Higher capacity for business"
-            ]
+            "title": "Tilo, 56 – Body Fat Loss: 4% – Period: 5 Months",
+            "images": [
+              "/assets/transformations/tilo-1.jpg",
+              "/assets/transformations/tilo-2.jpg",
+              "/assets/transformations/tilo-3.jpg"
+            ],
+            "alt": "Tilo Transformation",
+            "text": "With Coach Alex, he focused on protein intake, intensive strength training, and prioritizing recovery. The results paid off: Thilo is stronger, fitter, and back on his motocross bike without fear.",
+            "quote": "I never thought I'd get this fit at 50! Now my sons can barely keep up."
           },
           {
-            "title": "Lukas · +6 kg lean mass",
-            "image": "/assets/Expert-Supervision.jpg",
-            "alt": "Transformation 2",
-            "bullets": [
-              "Structured plan despite 60h weeks",
-              "Visible progress every 4 weeks",
-              "More confidence & focus"
-            ]
+            "title": "Livius, 26 – Body Fat Loss: 7 KG – Period: 6 Months",
+            "images": [
+              "/assets/transformations/livius-1.jpg",
+              "/assets/transformations/livius-2.jpg",
+              "/assets/transformations/livius-3.jpg"
+            ],
+            "alt": "Livius Transformation",
+            "text": "Like many young professionals, Livius struggled with irregular routines, low energy, and the feeling that fitness didn't fit into his life. With Coach Klemen, he learned the importance of progressive overload, restful sleep, and recovery.",
+            "quote": "Thanks to the group classes, I found a new routine that helped me get fit again."
           },
           {
-            "title": "Florian · Defined physique",
-            "image": "/assets/Recovery-and-Refuel.jpg",
-            "alt": "Transformation 3",
-            "bullets": [
-              "Clear goal & accountability",
-              "Improved endurance and less stress",
-              "New energy for business & family"
-            ]
+            "title": "Florian, 30 – Muscle Gain: 5.2 KG – Period: 4 Months",
+            "images": [
+              "/assets/transformations/florian-1.jpg",
+              "/assets/transformations/florian-2.jpg",
+              "/assets/transformations/florian-3.jpg"
+            ],
+            "alt": "Florian Transformation",
+            "text": "Florian felt too busy with work and social life to train. With Coach Alex, he found a routine of regular training, balanced nutrition, and sleep. Today he plays football weekly and is preparing for a marathon.",
+            "quote": "It felt like training in my own gym with friends – not just another workout, but a place where people really care."
           }
         ]
       }
     },
     "facility": {
       "eyebrow": "YOUR GYM IN MUNICH",
-      "title": "Train where results are created",
-      "subtitle": "Private 300 m² premium gym with everything you need for your transformation."
+      "title": "Train where results are created.",
+      "subtitle": "in our private 300 m² premium gym in the heart of Munich."
     },
     "finalCta": {
       "eyebrow": "READY FOR THE NEXT STEP?",

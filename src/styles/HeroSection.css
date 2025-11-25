@@ -52,18 +52,20 @@
 .hero-content {
   z-index: 1;
   padding: 20px;
-  max-width: 1100px; /* Wider for better readability */
-  width: 90%; /* Responsive width */
+  max-width: 1500px; /* Wider for better readability */
+  width: 92%; /* Responsive width */
 }
 
 .hero-content h1 {
   font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
-  font-weight: 800;
+  font-weight: 900;
   margin: 0;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  color: white;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-shadow: 0 3px 25px rgba(0, 0, 0, 0.5), 0 1px 5px rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .hero-content h1.highlight {
@@ -74,13 +76,16 @@
 .hero-content p {
   font-size: clamp(1.125rem, 2vw + 0.5rem, 1.5rem);
   margin-bottom: 40px;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.01em;
   line-height: 1.5;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5), 0 1px 5px rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (max-width: 768px) {

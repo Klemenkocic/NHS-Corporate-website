@@ -9,9 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 export interface FeatureSlide {
   title: string;
   time?: string;
-  image: string;
+  image?: string;
+  images?: string[];
   alt: string;
-  bullets: string[];
+  bullets?: string[];
+  text?: string;
+  quote?: string;
 }
 
 interface FeatureSectionProps {
@@ -24,11 +27,12 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
   translationKey
 }) => {
   const { t } = useTranslation();
-  
+
   const sectionRef = useRef<HTMLElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
   const horizontalRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [currentImageIndices, setCurrentImageIndices] = useState<number[]>([]);
   
   // Function to check if the device is mobile
   const checkIfMobile = () => {
@@ -147,6 +151,42 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
   const subtitle = (t as any)(`${translationKey}.subtitle`);
   const scrollIndicator = (t as any)(`${translationKey}.scrollIndicator`);
 
+  // Initialize image indices for each slide
+  useEffect(() => {
+    setCurrentImageIndices(slides.map(() => 0));
+  }, [slides]);
+
+  // Auto-cycle through images
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndices(prev =>
+        prev.map((index, slideIndex) => {
+          const slide = slides[slideIndex];
+          const imageCount = slide.images?.length || 1;
+          return (index + 1) % imageCount;
+        })
+      );
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [slides]);
+
+  const handleImageClick = (slideIndex: number, direction: 'next' | 'prev') => {
+    setCurrentImageIndices(prev => {
+      const newIndices = [...prev];
+      const slide = slides[slideIndex];
+      const imageCount = slide.images?.length || 1;
+
+      if (direction === 'next') {
+        newIndices[slideIndex] = (newIndices[slideIndex] + 1) % imageCount;
+      } else {
+        newIndices[slideIndex] = (newIndices[slideIndex] - 1 + imageCount) % imageCount;
+      }
+
+      return newIndices;
+    });
+  };
+
   // Render desktop version with horizontal scrolling
   const renderDesktopVersion = () => (
     <section ref={sectionRef} id={sectionId} className="expectations-section">
@@ -157,22 +197,78 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
         </div>
         
         <div ref={horizontalRef} className="expectations-horizontal">
-          {slides.map((slide, index) => (
-            <div key={index} className="expectation-slide">
+          {slides.map((slide, slideIndex) => (
+            <div key={slideIndex} className="expectation-slide">
               <div className="expectation-content-container">
-                <div className="expectation-image">
-                  <img src={slide.image} alt={slide.alt} />
+                <div className="expectation-image-carousel">
+                  {slide.images ? (
+                    <>
+                      <div className="carousel-images">
+                        {slide.images.map((img, imgIndex) => (
+                          <img
+                            key={imgIndex}
+                            src={img}
+                            alt={`${slide.alt} ${imgIndex + 1}`}
+                            className={currentImageIndices[slideIndex] === imgIndex ? 'active' : ''}
+                          />
+                        ))}
+                      </div>
+                      <button
+                        className="carousel-nav prev"
+                        onClick={() => handleImageClick(slideIndex, 'prev')}
+                        aria-label="Previous image"
+                      >
+                        ‹
+                      </button>
+                      <button
+                        className="carousel-nav next"
+                        onClick={() => handleImageClick(slideIndex, 'next')}
+                        aria-label="Next image"
+                      >
+                        ›
+                      </button>
+                      <div className="carousel-indicators">
+                        {slide.images.map((_, imgIndex) => (
+                          <button
+                            key={imgIndex}
+                            className={currentImageIndices[slideIndex] === imgIndex ? 'active' : ''}
+                            onClick={() => {
+                              setCurrentImageIndices(prev => {
+                                const newIndices = [...prev];
+                                newIndices[slideIndex] = imgIndex;
+                                return newIndices;
+                              });
+                            }}
+                            aria-label={`Go to image ${imgIndex + 1}`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  ) : (
+                    <img src={slide.image} alt={slide.alt} />
+                  )}
                 </div>
                 <div className="expectation-content">
                   <div className="title-time-container">
                     <h3>{slide.title}</h3>
-                    <span className="time-indicator">{slide.time}</span>
+                    {slide.time && <span className="time-indicator">{slide.time}</span>}
                   </div>
-                  <ul className="expectation-bullet-list">
-                    {slide.bullets.map((bullet, bulletIndex) => (
-                      <li key={bulletIndex}>{bullet}</li>
-                    ))}
-                  </ul>
+                  {slide.bullets ? (
+                    <ul className="expectation-bullet-list">
+                      {slide.bullets.map((bullet, bulletIndex) => (
+                        <li key={bulletIndex}>{bullet}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <div className="transformation-text">
+                      {slide.text && <p className="transformation-description">{slide.text}</p>}
+                      {slide.quote && (
+                        <blockquote className="transformation-quote">
+                          {slide.quote}
+                        </blockquote>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -197,21 +293,77 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
       </div>
       
       <div className="mobile-expectations-container">
-        {slides.map((slide, index) => (
-          <div key={index} className="mobile-expectation-slide">
+        {slides.map((slide, slideIndex) => (
+          <div key={slideIndex} className="mobile-expectation-slide">
             <div className="mobile-expectation-content">
               <div className="mobile-title-time">
                 <h3>{slide.title}</h3>
-                <span className="time-indicator">{slide.time}</span>
+                {slide.time && <span className="time-indicator">{slide.time}</span>}
               </div>
-              <div className="mobile-expectation-image">
-                <img src={slide.image} alt={slide.alt} />
+              <div className="mobile-expectation-image-carousel">
+                {slide.images ? (
+                  <>
+                    <div className="carousel-images">
+                      {slide.images.map((img, imgIndex) => (
+                        <img
+                          key={imgIndex}
+                          src={img}
+                          alt={`${slide.alt} ${imgIndex + 1}`}
+                          className={currentImageIndices[slideIndex] === imgIndex ? 'active' : ''}
+                        />
+                      ))}
+                    </div>
+                    <button
+                      className="carousel-nav prev"
+                      onClick={() => handleImageClick(slideIndex, 'prev')}
+                      aria-label="Previous image"
+                    >
+                      ‹
+                    </button>
+                    <button
+                      className="carousel-nav next"
+                      onClick={() => handleImageClick(slideIndex, 'next')}
+                      aria-label="Next image"
+                    >
+                      ›
+                    </button>
+                    <div className="carousel-indicators">
+                      {slide.images.map((_, imgIndex) => (
+                        <button
+                          key={imgIndex}
+                          className={currentImageIndices[slideIndex] === imgIndex ? 'active' : ''}
+                          onClick={() => {
+                            setCurrentImageIndices(prev => {
+                              const newIndices = [...prev];
+                              newIndices[slideIndex] = imgIndex;
+                              return newIndices;
+                            });
+                          }}
+                          aria-label={`Go to image ${imgIndex + 1}`}
+                        />
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <img src={slide.image} alt={slide.alt} />
+                )}
               </div>
-              <ul className="expectation-bullet-list">
-                {slide.bullets.map((bullet, bulletIndex) => (
-                  <li key={bulletIndex}>{bullet}</li>
-                ))}
-              </ul>
+              {slide.bullets ? (
+                <ul className="expectation-bullet-list">
+                  {slide.bullets.map((bullet, bulletIndex) => (
+                    <li key={bulletIndex}>{bullet}</li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="transformation-text">
+                  {slide.text && <p className="transformation-description">{slide.text}</p>}
+                  {slide.quote && (
+                    <blockquote className="transformation-quote">
+                      {slide.quote}
+                    </blockquote>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         ))}

@@ -17,7 +17,9 @@ const ChallengesSection: React.FC = () => {
   return (
     <section id="challenges" className="challenges-section">
       <div className="challenges-container">
-        <p className="eyebrow">{(t as any)('landing.challenges.eyebrow')}</p>
+        {(t as any)('landing.challenges.eyebrow') && (
+          <p className="eyebrow">{(t as any)('landing.challenges.eyebrow')}</p>
+        )}
         <h2>{(t as any)('landing.challenges.title')}</h2>
         <p className="subtitle">{(t as any)('landing.challenges.subtitle')}</p>
 

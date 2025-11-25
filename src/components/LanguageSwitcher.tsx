@@ -44,7 +44,7 @@ const LanguageSwitcher: React.FC = () => {
     if (i18n.language !== 'de') {
       i18n.changeLanguage('de');
     }
-  }, []);
+  }, [i18n]);
 
   // Handle mouse enter with delay
   const handleMouseEnter = () => {

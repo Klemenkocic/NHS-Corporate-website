@@ -190,6 +190,29 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
     });
   };
 
+  // Touch handlers for swipe functionality on mobile
+  const handleTouchStart = (e: React.TouchEvent, slideIndex: number) => {
+    const touchStartX = e.touches[0].clientX;
+    (e.currentTarget as HTMLElement).dataset.touchStartX = touchStartX.toString();
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent, slideIndex: number) => {
+    const touchStartX = parseFloat((e.currentTarget as HTMLElement).dataset.touchStartX || '0');
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX - touchEndX;
+
+    // Swipe threshold of 50px
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        // Swiped left, go to next image
+        handleImageClick(slideIndex, 'next');
+      } else {
+        // Swiped right, go to previous image
+        handleImageClick(slideIndex, 'prev');
+      }
+    }
+  };
+
   // Render desktop version with horizontal scrolling
   const renderDesktopVersion = () => (
     <section ref={sectionRef} id={sectionId} className="expectations-section">
@@ -306,7 +329,11 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
               <div className="mobile-expectation-image-carousel">
                 {slide.images ? (
                   <>
-                    <div className="carousel-images">
+                    <div
+                      className="carousel-images"
+                      onTouchStart={(e) => handleTouchStart(e, slideIndex)}
+                      onTouchEnd={(e) => handleTouchEnd(e, slideIndex)}
+                    >
                       {slide.images.map((img, imgIndex) => (
                         <img
                           key={imgIndex}

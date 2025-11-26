@@ -124,18 +124,45 @@
     padding: 60px 20px;
   }
 
-  .facility-carousel-wrapper::before,
-  .facility-carousel-wrapper::after {
-    width: 50px;
+  .facility-carousel-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    cursor: grab;
+    padding: 0 10px;
   }
 
-  .facility-card {
-    width: 180px;
-    height: 270px;
+  .facility-carousel-wrapper:active {
+    cursor: grabbing;
+  }
+
+  .facility-carousel-wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .facility-carousel-wrapper::before,
+  .facility-carousel-wrapper::after {
+    display: none;
+  }
+
+  .facility-carousel {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
   .facility-track {
-    animation: facilityScroll 60s linear infinite;
+    animation: none;
+    gap: 15px;
+    padding: 10px 5px;
+  }
+
+  .facility-card {
+    width: 160px;
+    height: 240px;
   }
 
   .facility-container .subtitle {
@@ -148,18 +175,13 @@
     padding: 50px 15px;
   }
 
-  .facility-carousel-wrapper::before,
-  .facility-carousel-wrapper::after {
-    width: 30px;
-  }
-
   .facility-card {
-    width: 160px;
-    height: 240px;
+    width: 140px;
+    height: 210px;
   }
 
   .facility-track {
-    animation: facilityScroll 50s linear infinite;
+    gap: 12px;
   }
 
   .facility-container .subtitle {

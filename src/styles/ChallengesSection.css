@@ -52,12 +52,13 @@
   background: #f9fbff;
   border-radius: 18px;
   padding: 30px;
-  text-align: left;
+  text-align: center;
   box-shadow: 0 10px 30px rgba(0, 32, 91, 0.08);
   border: 1px solid rgba(0, 94, 184, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 220px;
 }
 
@@ -67,7 +68,7 @@
 }
 
 .challenge-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--color-primary-dark);
   margin-bottom: 12px;
   font-weight: var(--font-weight-semibold);
@@ -77,7 +78,7 @@
 }
 
 .challenge-card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-text-secondary);
   line-height: 1.5;
   margin: 0;

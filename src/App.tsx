@@ -11,7 +11,6 @@ import StepsSection from './components/StepsSection';
 import FacilityGallerySection from './components/FacilityGallerySection';
 import FinalCTASection from './components/FinalCTASection';
 import BlobBackground from './components/BlobBackground';
-import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import CookieConsent from './components/CookieConsent';
 
@@ -67,7 +66,6 @@ const App: React.FC = () => {
           translationKey="landing.features.transformations"
         />
         <FinalCTASection />
-        <Footer />
         <BackToTop />
         <CookieConsent />
       </div>

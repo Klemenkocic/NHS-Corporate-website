@@ -39,30 +39,47 @@ const GoogleReviewsSection: React.FC = () => {
       try {
         setLoading(true);
 
+        console.log('Fetching reviews with Place ID:', placeId);
+        console.log('API Key present:', !!apiKey);
+
         // Use the new Google Places API (New) endpoint
         const response = await fetch(
-          `https://places.googleapis.com/v1/places/${placeId}?fields=rating,userRatingCount,reviews&key=${apiKey}`,
+          `https://places.googleapis.com/v1/places/${placeId}`,
           {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
+              'X-Goog-Api-Key': apiKey,
+              'X-Goog-FieldMask': 'rating,userRatingCount,reviews'
             },
             signal: controller.signal
           }
         );
 
+        console.log('Response status:', response.status);
+        console.log('Response headers:', response.headers);
+
         if (!response.ok) {
-          const errorData = await response.json();
-          console.error('API Error:', errorData);
-          throw new Error(`Request failed: ${response.status}`);
+          const errorText = await response.text();
+          console.error('API Error Response:', errorText);
+          let errorData;
+          try {
+            errorData = JSON.parse(errorText);
+            console.error('API Error (parsed):', errorData);
+          } catch {
+            console.error('Could not parse error response');
+          }
+          throw new Error(`Request failed: ${response.status} - ${errorText}`);
         }
 
         const data = await response.json();
-        console.log('Reviews data:', data);
+        console.log('Reviews data received:', data);
+        console.log('Number of reviews:', data.reviews?.length || 0);
         setReviews(data.reviews || []);
       } catch (err) {
         if ((err as Error).name !== 'AbortError') {
-          console.error('Fetch error:', err);
+          console.error('Fetch error details:', err);
+          console.error('Error message:', (err as Error).message);
           setError(t('landing.reviews.error'));
         }
       } finally {
@@ -86,9 +103,9 @@ const GoogleReviewsSection: React.FC = () => {
           {t('landing.reviews.eyebrow') && (
             <p className="eyebrow">{t('landing.reviews.eyebrow')}</p>
           )}
-          <h2>{t('landing.reviews.title')}</h2>
-          <p className="subtitle">{t('landing.reviews.subtitle')}</p>
-          <p className="subtitle2">{t('landing.reviews.subtitle2')}</p>
+          <h2 dangerouslySetInnerHTML={{ __html: t('landing.reviews.title') }}></h2>
+          <p className="subtitle" dangerouslySetInnerHTML={{ __html: t('landing.reviews.subtitle') }}></p>
+          <p className="subtitle2" dangerouslySetInnerHTML={{ __html: t('landing.reviews.subtitle2') }}></p>
         </div>
 
         <div className="reviews-summary">

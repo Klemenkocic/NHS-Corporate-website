@@ -9,7 +9,6 @@ import GoogleReviewsSection from './components/GoogleReviewsSection';
 import ExpectationsSection from './components/ExpectationsSection';
 import StepsSection from './components/StepsSection';
 import FacilityGallerySection from './components/FacilityGallerySection';
-import ContactSection from './components/ContactSection';
 import FinalCTASection from './components/FinalCTASection';
 import BlobBackground from './components/BlobBackground';
 import Footer from './components/Footer';
@@ -68,7 +67,6 @@ const App: React.FC = () => {
           translationKey="landing.features.transformations"
         />
         <FinalCTASection />
-        <ContactSection />
         <Footer />
         <BackToTop />
         <CookieConsent />

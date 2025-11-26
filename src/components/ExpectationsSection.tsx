@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/ExpectationsSection.css';
 import { gsap } from 'gsap';
@@ -143,9 +143,9 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
     };
   }, [isMobile]);
 
-  const slides = (t as any)(`${translationKey}.slides`, {
+  const slides = useMemo(() => (t as any)(`${translationKey}.slides`, {
     returnObjects: true
-  }) as FeatureSlide[];
+  }) as FeatureSlide[], [t, translationKey]);
 
   const title = (t as any)(`${translationKey}.title`);
   const subtitle = (t as any)(`${translationKey}.subtitle`);
@@ -154,13 +154,16 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
   // Initialize image indices for each slide
   useEffect(() => {
     setCurrentImageIndices(slides.map(() => 0));
-  }, [slides]);
+  }, [slides.length]);
 
   // Auto-cycle through images
   useEffect(() => {
+    if (slides.length === 0 || currentImageIndices.length === 0) return;
+
     const interval = setInterval(() => {
       setCurrentImageIndices(prev =>
         prev.map((index, slideIndex) => {
+          if (!slides[slideIndex]) return 0;
           const slide = slides[slideIndex];
           const imageCount = slide.images?.length || 1;
           return (index + 1) % imageCount;
@@ -169,7 +172,7 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
     }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
-  }, [slides]);
+  }, []);
 
   const handleImageClick = (slideIndex: number, direction: 'next' | 'prev') => {
     setCurrentImageIndices(prev => {
@@ -192,8 +195,8 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
     <section ref={sectionRef} id={sectionId} className="expectations-section">
       <div ref={triggerRef} className="expectations-trigger">
         <div className="expectations-header">
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
+          <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>
+          <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>
         </div>
         
         <div ref={horizontalRef} className="expectations-horizontal">
@@ -288,8 +291,8 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
   const renderMobileVersion = () => (
     <section id={sectionId} className="expectations-section mobile-section">
       <div className="expectations-header">
-        <h2>{title}</h2>
-        <p>{subtitle}</p>
+        <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>
+        <p dangerouslySetInnerHTML={{ __html: subtitle }}></p>
       </div>
       
       <div className="mobile-expectations-container">

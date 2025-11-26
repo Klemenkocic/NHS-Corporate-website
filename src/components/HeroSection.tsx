@@ -27,8 +27,8 @@ const HeroSection: React.FC = () => {
         <div className="overlay"></div>
       </div>
       <div className="hero-content">
-        <h1>{t('hero.title')}</h1>
-        <p>{t('hero.subtitle')}</p>
+        <h1 dangerouslySetInnerHTML={{ __html: t('hero.title') }}></h1>
+        <p dangerouslySetInnerHTML={{ __html: t('hero.subtitle') }}></p>
         <Button
           className="primary-button"
           radius="md"

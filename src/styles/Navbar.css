@@ -96,6 +96,15 @@
 .mobile-menu-container {
   display: flex;
   align-items: center;
+  gap: 15px;
+}
+
+.desktop-contact-button {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
 }
 
 .menu-toggle {
@@ -225,6 +234,14 @@
   
   .desktop-language-switcher {
     display: none;
+  }
+
+  .desktop-contact-button {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
   }
   
   /* Ensure navbar is visible on all backgrounds */

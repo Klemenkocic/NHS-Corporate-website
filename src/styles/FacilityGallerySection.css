@@ -25,6 +25,10 @@
   font-weight: var(--font-weight-bold);
 }
 
+.facility-container h2 .highlight-blue {
+  color: #005eb8;
+}
+
 .facility-container .subtitle {
   font-size: var(--font-size-body-lg);
   color: var(--color-text-secondary);
@@ -33,10 +37,62 @@
   line-height: var(--line-height-relaxed);
 }
 
-.facility-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+.facility-container .subtitle .highlight-blue {
+  color: #005eb8;
+}
+
+/* Carousel Wrapper */
+.facility-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 40px 0;
+}
+
+.facility-carousel-wrapper::before,
+.facility-carousel-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.facility-carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.facility-carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.facility-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.facility-track {
+  display: flex;
+  gap: 20px;
+  animation: facilityScroll 80s linear infinite;
+  width: max-content;
+}
+
+.facility-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes facilityScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .facility-card {
@@ -44,6 +100,9 @@
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 32, 91, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  width: 200px;
+  height: 300px;
 }
 
 .facility-card:hover {
@@ -53,8 +112,9 @@
 
 .facility-card img {
   width: 100%;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -64,13 +124,18 @@
     padding: 60px 20px;
   }
 
-  .facility-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+  .facility-carousel-wrapper::before,
+  .facility-carousel-wrapper::after {
+    width: 50px;
   }
 
-  .facility-card img {
-    height: 200px;
+  .facility-card {
+    width: 180px;
+    height: 270px;
+  }
+
+  .facility-track {
+    animation: facilityScroll 60s linear infinite;
   }
 
   .facility-container .subtitle {
@@ -83,13 +148,18 @@
     padding: 50px 15px;
   }
 
-  .facility-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  .facility-carousel-wrapper::before,
+  .facility-carousel-wrapper::after {
+    width: 30px;
   }
 
-  .facility-card img {
-    height: 220px;
+  .facility-card {
+    width: 160px;
+    height: 240px;
+  }
+
+  .facility-track {
+    animation: facilityScroll 50s linear infinite;
   }
 
   .facility-container .subtitle {

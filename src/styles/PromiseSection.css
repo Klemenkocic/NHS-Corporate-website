@@ -26,6 +26,10 @@
   color: #ffffff;
 }
 
+.promise-container h2 .highlight-blue {
+  color: #005eb8;
+}
+
 .promise-container .subtitle {
   font-size: var(--font-size-body-lg);
   color: rgba(255, 255, 255, 0.95);
@@ -34,6 +38,10 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.promise-container .subtitle .highlight-blue {
+  color: #005eb8;
 }
 
 .promise-card {

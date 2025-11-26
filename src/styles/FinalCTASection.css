@@ -1,21 +1,27 @@
 .final-cta-section {
   padding: 80px 20px;
-  background: var(--color-primary);
-  color: white;
+  background: white;
+  color: #666;
 }
 
 .final-cta-container {
   max-width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(120deg, var(--color-primary), var(--color-primary-dark));
-  border-radius: 24px;
+  background: white;
+  border-radius: 0;
   padding: 60px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  box-shadow: none;
+}
+
+.final-cta-text {
+  width: 100%;
+  max-width: 900px;
 }
 
 .final-cta-container .eyebrow {
@@ -31,29 +37,40 @@
   font-size: var(--font-size-h2);
   margin: 10px 0 15px 0;
   font-weight: var(--font-weight-bold);
+  color: #666;
+}
+
+.final-cta-container h2 .highlight-blue {
+  color: var(--color-primary);
 }
 
 .final-cta-container p {
-  font-size: var(--font-size-body-lg);
-  color: rgba(255, 255, 255, 0.95);
-  max-width: 650px;
+  font-size: 1.4rem;
+  color: #666;
   line-height: var(--line-height-relaxed);
+  margin: 0 auto;
+}
+
+.final-cta-container p .highlight-blue {
+  color: var(--color-primary);
 }
 
 .final-cta-container .primary-button {
-  background: white;
-  color: var(--color-primary);
+  background: var(--color-primary);
+  color: white;
   border: none;
-  padding: 16px 40px;
+  padding: 18px 45px;
   border-radius: 999px;
   font-weight: var(--font-weight-semibold);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   transition: all 0.3s ease;
+  margin: 10px auto 0;
 }
 
 .final-cta-container .primary-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 94, 184, 0.3);
+  opacity: 0.9;
 }
 
 /* Responsive Design */

@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
 
         <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <ul className="navbar-nav">
-            <li className="nav-item nav-cta">
+            <li className="nav-item nav-cta mobile-only">
               <Button
                 className="primary-button nav-contact-button"
                 radius="md"
@@ -79,6 +79,13 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="mobile-menu-container">
+          <Button
+            className="primary-button nav-contact-button desktop-contact-button"
+            radius="md"
+            onClick={(e: React.MouseEvent) => scrollToSection(e, 'contact')}
+          >
+            {t('navbar.contactUs')}
+          </Button>
           <div className="desktop-language-switcher">
             <LanguageSwitcher />
           </div>

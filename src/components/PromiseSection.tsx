@@ -10,8 +10,8 @@ const PromiseSection: React.FC = () => {
     <section id="promise" className="promise-section">
       <div className="promise-container">
         <p className="eyebrow">{t('landing.promise.eyebrow')}</p>
-        <h2>{t('landing.promise.title')}</h2>
-        <p className="subtitle">{t('landing.promise.subtitle')}</p>
+        <h2 dangerouslySetInnerHTML={{ __html: t('landing.promise.title') }}></h2>
+        <p className="subtitle" dangerouslySetInnerHTML={{ __html: t('landing.promise.subtitle') }}></p>
 
         <div className="promise-card">
           <p>{t('landing.promise.body')}</p>

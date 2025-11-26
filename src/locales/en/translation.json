@@ -4,11 +4,11 @@
     "pricing": "Results",
     "whatToExpect": "Process",
     "location": "Facility",
-    "contactUs": "Contact Us"
+    "contactUs": "Initial Consultation"
   },
   "hero": {
-    "title": "BECOME VISIBLY FITTER, LEANER AND MORE ENERGETIC IN JUST 4 MONTHS WITH OUR BESPOKE 1:1 COACHING",
-    "subtitle": "For entrepreneurs & executives who are tired of overcrowded gyms, diets and training without results and finally want a system that fits into their daily life.",
+    "title": "BECOME VISIBLY FITTER, LEANER AND MORE ENERGETIC IN <span class='highlight-blue'>JUST 4 MONTHS</span><br />WITH OUR <span class='highlight-blue'>BESPOKE 1:1 COACHING</span>",
+    "subtitle": "For entrepreneurs & executives who are tired of overcrowded gyms, diets and training without results<br />and finally want a system that fits into their daily life",
     "cta": "Book consultation"
   },
   "about": {
@@ -149,48 +149,48 @@
   "landing": {
     "challenges": {
       "eyebrow": "",
-      "title": "Most entrepreneurs & executives realise too late what their body has been signalling for years.",
-      "subtitle": "And this leads to the following problems.",
+      "title": "MOST ENTREPRENEURS & EXECUTIVES REALISE TOO LATE <span class='highlight-blue'>WHAT THEIR BODY HAS BEEN SIGNALLING FOR YEARS</span>",
+      "subtitle": "AND THIS LEADS TO THE FOLLOWING PROBLEMS",
       "cards": [
         {
-          "title": "Lack of Energy",
+          "title": "LACK OF ENERGY",
           "description": "Do you feel drained all day long? The battery is empty, but you still have to deliver."
         },
         {
-          "title": "Fatigue",
+          "title": "FATIGUE",
           "description": "Do you wake up as if you hadn't slept at all? The day starts already behind schedule."
         },
         {
-          "title": "Packed Schedule",
+          "title": "PACKED SCHEDULE",
           "description": "You want to fit in exercise – but the day simply has no more room? Every week passes without progress."
         },
         {
-          "title": "No Results",
+          "title": "NO RESULTS",
           "description": "You've tried everything – apps, plans, protein shakes – but nothing really changes your body?"
         },
         {
-          "title": "Countless Routines",
+          "title": "COUNTLESS ROUTINES",
           "description": "You've tried multiple times – but no routine sticks? Discipline doesn't fail you, the system does."
         },
         {
-          "title": "Loss of Productivity",
+          "title": "LOSS OF PRODUCTIVITY",
           "description": "Your lack of concentration and focus costs you several thousand euros per year."
         }
       ]
     },
     "promise": {
       "eyebrow": "OUR PROMISE",
-      "title": "We build a personalised roadmap with you",
-      "subtitle": "A system that takes you to your goal step by step – measurable and predictable.",
+      "title": "WE BUILD A PERSONALISED ROADMAP WITH YOU",
+      "subtitle": "A SYSTEM THAT TAKES YOU TO YOUR GOAL <span class='highlight-blue'>STEP BY STEP</span> – MEASURABLE AND PREDICTABLE",
       "body": "Together we analyse where you stand, remove blockers and design a plan that works in your demanding schedule. Training, nutrition and recovery follow one clear structure.",
-      "highlightTitle": "No theory – just results.",
+      "highlightTitle": "NO THEORY – JUST RESULTS",
       "highlightSubtitle": "We stay next to you until you arrive at your destination."
     },
     "reviews": {
       "eyebrow": "",
-      "title": "Do you recognise yourself in this? Then it's important that you understand one thing: the mistake is not yours!",
-      "subtitle": "You've simply been missing a system that fits your life.",
-      "subtitle2": "We develop an individual roadmap that takes you to your goal step by step.",
+      "title": "DO YOU RECOGNISE YOURSELF IN THIS? THEN IT'S IMPORTANT THAT YOU UNDERSTAND ONE THING: <span class='highlight-blue'>THE MISTAKE IS NOT YOURS!</span>",
+      "subtitle": "<span class='highlight-blue'>YOU'VE SIMPLY BEEN MISSING A SYSTEM</span> THAT FITS YOUR LIFE",
+      "subtitle2": "WE DEVELOP AN INDIVIDUAL ROADMAP THAT TAKES YOU TO YOUR GOAL STEP BY STEP",
       "ratingLabel": "Google Rating",
       "ratingSub": "Based on verified clients",
       "loading": "Loading reviews…",
@@ -201,12 +201,12 @@
     },
     "features": {
       "experience": {
-        "title": "Experience unforgettable training with 100% individual support without waiting times & occupied equipment.",
+        "title": "EXPERIENCE <span class='highlight-blue'>UNFORGETTABLE TRAINING WITH</span> 100% INDIVIDUAL SUPPORT WITHOUT WAITING TIMES & OCCUPIED EQUIPMENT",
         "subtitle": "",
         "scrollIndicator": "Scroll to explore",
         "slides": [
           {
-            "title": "Individually tailored training concept.",
+            "title": "INDIVIDUALLY TAILORED TRAINING CONCEPT",
             "time": "1:1 focus",
             "image": "/assets/Expert-Supervision.jpg",
             "alt": "Personal coaching",
@@ -216,7 +216,7 @@
             ]
           },
           {
-            "title": "Training in the most modern gym with the best equipment.",
+            "title": "TRAINING IN THE MOST MODERN GYM WITH THE BEST EQUIPMENT",
             "time": "Private sessions",
             "image": "/assets/gym.jpg",
             "alt": "Modern gym",
@@ -227,7 +227,7 @@
             ]
           },
           {
-            "title": "Top-trained coaches with years of experience.",
+            "title": "TOP-TRAINED COACHES WITH YEARS OF EXPERIENCE",
             "time": "15+ years",
             "image": "/assets/Group-Arrival.jpg",
             "alt": "Coaching team",
@@ -240,8 +240,8 @@
         ]
       },
       "steps": {
-        "title": "Our 6-step plan for maximum success",
-        "subtitle": "A clear process guiding you from day one.",
+        "title": "OUR <span class='highlight-blue'>6-STEP PLAN</span> FOR MAXIMUM SUCCESS",
+        "subtitle": "A CLEAR PROCESS GUIDING YOU FROM DAY ONE",
         "scrollIndicator": "Scroll through the steps",
         "slides": [
           {
@@ -295,8 +295,8 @@
         ]
       },
       "transformations": {
-        "title": "We have already helped over 100 clients achieve their dream body and build more energy.",
-        "subtitle": "These people stood exactly where you are now.",
+        "title": "WE HAVE ALREADY HELPED <span class='highlight-blue'>OVER 100 CLIENTS</span> ACHIEVE THEIR <span class='highlight-blue'>DREAM BODY</span> AND BUILD MORE ENERGY",
+        "subtitle": "THESE PEOPLE STOOD <span class='highlight-blue'>EXACTLY WHERE YOU ARE NOW</span>",
         "scrollIndicator": "Scroll to see their change",
         "slides": [
           {
@@ -337,14 +337,14 @@
     },
     "facility": {
       "eyebrow": "YOUR GYM IN MUNICH",
-      "title": "Train where results are created.",
-      "subtitle": "in our private 300 m² premium gym in the heart of Munich."
+      "title": "<span class='highlight-blue'>TRAIN WHERE RESULTS ARE CREATED</span>",
+      "subtitle": "IN OUR PRIVATE 300 M² PREMIUM GYM IN THE HEART OF MUNICH"
     },
     "finalCta": {
-      "eyebrow": "READY FOR THE NEXT STEP?",
-      "title": "Find out which system works for you.",
-      "subtitle": "Book a consultation and discover how your plan could look.",
-      "cta": "Secure your spot"
+      "eyebrow": "",
+      "title": "ARE YOU READY TO BECOME VISIBLY FITTER, MORE ENERGETIC AND MORE PRODUCTIVE IN <span class='highlight-blue'>JUST 4 MONTHS</span>",
+      "subtitle": "THEN LET'S FIND OUT <span class='highlight-blue'>WHICH SYSTEM WORKS FOR YOU</span>",
+      "cta": "Secure your free initial consultation now"
     }
   },
   "location": {

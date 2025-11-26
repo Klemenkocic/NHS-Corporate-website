@@ -6,22 +6,22 @@ import { TranslationFunction } from '../types/i18n';
 const FinalCTASection: React.FC = () => {
   const { t } = useTranslation() as { t: TranslationFunction };
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
     <section className="final-cta-section">
       <div className="final-cta-container">
-        <div>
-          <p className="eyebrow">{t('landing.finalCta.eyebrow')}</p>
-          <h2>{t('landing.finalCta.title')}</h2>
-          <p>{t('landing.finalCta.subtitle')}</p>
+        <div className="final-cta-text">
+          {t('landing.finalCta.eyebrow') && <p className="eyebrow">{t('landing.finalCta.eyebrow')}</p>}
+          <h2 dangerouslySetInnerHTML={{ __html: t('landing.finalCta.title') }}></h2>
+          <p dangerouslySetInnerHTML={{ __html: t('landing.finalCta.subtitle') }}></p>
         </div>
-        <button className="primary-button" onClick={scrollToContact}>
+        <button className="primary-button final-cta-button" onClick={scrollToTop}>
           {t('landing.finalCta.cta')}
         </button>
       </div>

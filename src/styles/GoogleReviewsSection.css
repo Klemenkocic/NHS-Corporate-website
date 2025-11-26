@@ -25,12 +25,20 @@
   font-weight: var(--font-weight-bold);
 }
 
+.reviews-header h2 .highlight-blue {
+  color: #005eb8;
+}
+
 .reviews-header .subtitle {
   font-size: var(--font-size-body-lg);
   color: var(--color-text-secondary);
   max-width: 800px;
   margin: 0 auto 20px auto;
   line-height: var(--line-height-relaxed);
+}
+
+.reviews-header .subtitle .highlight-blue {
+  color: #005eb8;
 }
 
 .reviews-header .subtitle2 {
@@ -40,6 +48,10 @@
   margin: 0 auto 50px auto;
   line-height: var(--line-height-relaxed);
   font-weight: var(--font-weight-semibold);
+}
+
+.reviews-header .subtitle2 .highlight-blue {
+  color: #005eb8;
 }
 
 .reviews-summary {

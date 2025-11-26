@@ -20,8 +20,8 @@ const ChallengesSection: React.FC = () => {
         {(t as any)('landing.challenges.eyebrow') && (
           <p className="eyebrow">{(t as any)('landing.challenges.eyebrow')}</p>
         )}
-        <h2>{(t as any)('landing.challenges.title')}</h2>
-        <p className="subtitle">{(t as any)('landing.challenges.subtitle')}</p>
+        <h2 dangerouslySetInnerHTML={{ __html: (t as any)('landing.challenges.title') }}></h2>
+        <p className="subtitle" dangerouslySetInnerHTML={{ __html: (t as any)('landing.challenges.subtitle') }}></p>
 
         <div className="challenge-grid">
           {cards?.map((card, index) => (

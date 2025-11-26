@@ -4,11 +4,11 @@
     "pricing": "Erfolge",
     "whatToExpect": "Ablauf",
     "location": "Studio",
-    "contactUs": "Kontakt"
+    "contactUs": "Erstberatung"
   },
   "hero": {
-    "title": "WERDE IN NUR 4 MONATEN SICHTBAR FITTER, SCHLANKER UND ENERGIEGELADENER MIT UNSEREM INDIVIDUELLEN 1:1 COACHING",
-    "subtitle": "Für Unternehmer & Führungskräfte, die genug haben von überfüllten Gyms, Diäten und Trainings ohne erfolg und endlich ein System wollen, das in ihren Alltag passt.",
+    "title": "<span class='highlight-blue'>WERDE IN NUR 4 MONATEN</span> SICHTBAR FITTER, SCHLANKER UND<br />ENERGIEGELADENER MIT UNSEREM <span class='highlight-blue'>INDIVIDUELLEN 1:1 COACHING</span>",
+    "subtitle": "Für Unternehmer & Führungskräfte, die genug haben von überfüllten Gyms, Diäten und Trainings ohne Erfolg<br />und endlich ein System wollen, das in ihren Alltag passt",
     "cta": "Jetzt Beratung buchen"
   },
   "about": {
@@ -151,48 +151,48 @@
   "landing": {
     "challenges": {
       "eyebrow": "",
-      "title": "Die meisten Unternehmer & Führungskräfte erkennen zu spät, was ihr Körper ihnen seit Jahren signalisiert.",
-      "subtitle": "Und genau das führt zu folgenden Problemen.",
+      "title": "DIE MEISTEN UNTERNEHMER & FÜHRUNGSKRÄFTE ERKENNEN ZU SPÄT, <span class='highlight-blue'>WAS IHR KÖRPER IHNEN SEIT JAHREN SIGNALISIERT</span>",
+      "subtitle": "UND GENAU DAS FÜHRT ZU FOLGENDEN PROBLEMEN",
       "cards": [
         {
-          "title": "Energielosigkeit",
+          "title": "ENERGIELOSIGKEIT",
           "description": "Fühlst du dich den ganzen Tag über ausgelaugt? Der Akku ist leer, aber du musst trotzdem liefern."
         },
         {
-          "title": "Müdigkeit",
+          "title": "MÜDIGKEIT",
           "description": "Wachst du auf, als hättest du gar nicht geschlafen? Der Tag startet schon mit Rückstand."
         },
         {
-          "title": "Voller Terminkalender",
+          "title": "VOLLER TERMINKALENDER",
           "description": "Du möchtest Sport unterbringen – aber der Tag hat einfach nicht mehr Platz? Jede Woche vergeht ohne Fortschritt."
         },
         {
-          "title": "Keine Ergebnisse",
+          "title": "KEINE ERGEBNISSE",
           "description": "Du hast alles probiert – Apps, Pläne, Proteinshakes – aber nichts verändert deinen Körper wirklich?"
         },
         {
-          "title": "Unzählige Routinen",
+          "title": "UNZÄHLIGE ROUTINEN",
           "description": "Du hast es mehrfach versucht – aber keine Routine bleibt bestehen? Die Disziplin scheitert nicht an dir, sondern am System."
         },
         {
-          "title": "Produktivitätsverlust",
+          "title": "PRODUKTIVITÄTSVERLUST",
           "description": "Dein Mangel an Konzentration und Fokus kostet dich mehrere Tausend Euro im Jahr."
         }
       ]
     },
     "promise": {
       "eyebrow": "UNSER VERSPRECHEN",
-      "title": "Wir entwickeln mit dir einen individuellen Fahrplan",
-      "subtitle": "Ein System, das dich Schritt für Schritt an dein Ziel bringt – messbar und planbar.",
+      "title": "WIR ENTWICKELN MIT DIR EINEN INDIVIDUELLEN FAHRPLAN",
+      "subtitle": "EIN SYSTEM, DAS DICH <span class='highlight-blue'>SCHRITT FÜR SCHRITT</span> AN DEIN ZIEL BRINGT – MESSBAR UND PLANBAR",
       "body": "Gemeinsam analysieren wir deine aktuelle Situation, bauen auf deinen Stärken auf und eliminieren Blockaden. Du erhältst ein klares System aus Training, Ernährung und Regeneration, das in deinen anspruchsvollen Alltag passt.",
-      "highlightTitle": "Keine Theorie – nur Resultate.",
+      "highlightTitle": "KEINE THEORIE – NUR RESULTATE",
       "highlightSubtitle": "Wir begleiten dich persönlich, bis du dort bist, wo du hinwillst."
     },
     "reviews": {
       "eyebrow": "",
-      "title": "Erkennst du dich darin wieder? Dann ist wichtig, dass du eines verstehst: der Fehler liegt nicht bei dir!",
-      "subtitle": "Dir hat bisher einfach ein System gefehlt, das zu deinem Leben passt.",
-      "subtitle2": "Wir entwickeln einen individuellen Fahrplan, der dich Schritt für Schritt an dein Ziel bringt.",
+      "title": "ERKENNST DU DICH DARIN WIEDER? DANN IST WICHTIG, DASS DU EINES VERSTEHST: <span class='highlight-blue'>DER FEHLER LIEGT NICHT BEI DIR!</span>",
+      "subtitle": "<span class='highlight-blue'>DIR HAT BISHER EINFACH EIN SYSTEM GEFEHLT</span>, DAS ZU DEINEM LEBEN PASST",
+      "subtitle2": "WIR ENTWICKELN EINEN INDIVIDUELLEN FAHRPLAN, DER DICH SCHRITT FÜR SCHRITT AN DEIN ZIEL BRINGT",
       "ratingLabel": "Google Rating",
       "ratingSub": "Basierend auf echten Kunden",
       "loading": "Bewertungen werden geladen …",
@@ -203,47 +203,43 @@
     },
     "features": {
       "experience": {
-        "title": "Erlebe ein unvergessliches trainingserlebnis mit 100% individueller Betreuung ohne wartezeiten & blockierten geräten.",
+        "title": "ERLEBE EIN <span class='highlight-blue'>UNVERGESSLICHES TRAININGSERLEBNIS MIT</span> 100% INDIVIDUELLER BETREUUNG OHNE WARTEZEITEN & BLOCKIERTEN GERÄTEN",
         "subtitle": "",
         "scrollIndicator": "Scroll für mehr Einblicke",
         "slides": [
           {
-            "title": "Individuell auf dich abgestimmtes Trainingskonzept.",
+            "title": "INDIVIDUELL AUF DICH ABGESTIMMTES TRAININGSKONZEPT",
             "time": "1:1 Fokus",
             "image": "/assets/Expert-Supervision.jpg",
             "alt": "Personal Coaching",
             "bullets": [
-              "Wir legen besonderen Wert auf eine 1:1 Betreuung, mit der du schnellstmäglich an dein Ziel kommst.",
-              "Daher stehen dir während deines Trainings immer top ausgebildete Trainerinnen & Trainer zur Seite, die deine individuelle Trainingplan mit dir durchgehen."
+              "Wir legen besonderen Wert auf eine 1:1 Betreuung, mit der du schnellstmäglich an dein Ziel kommst.  Daher stehen dir während deines Trainings immer top ausgebildete Trainerinnen & Trainer zur Seite, die deine individuelle Trainingplan mit dir durchgehen."
             ]
           },
           {
-            "title": "Trainieren im modernsten Gym mit bestem Equipment.",
+            "title": "TRAINIEREN IM MODERNSTEN GYM MIT BESTEM EQUIPMENT",
             "time": "Private Sessions",
             "image": "/assets/gym.jpg",
             "alt": "Modernes Gym",
             "bullets": [
-              "Wir wollen nur das beste für dich!",
-              "Daher erwartet dich bei uns ein voll ausgestattetest Gym mit modernsten Geräten.",
-              "Du bekommst alles, was du brauchst von uns."
+              "Wir wollen nur das beste für dich!   Daher erwartet dich bei uns ein voll ausgestattetest Gym mit modernsten Geräten.",
+              "Du bekommst alles, was du brauchst von uns"
             ]
           },
           {
-            "title": "Top ausgebildete Trainer mit jahrelanger Erfahrung.",
+            "title": "TOP AUSGEBILDETE TRAINER MIT JAHRELANGER ERFAHRUNG",
             "time": "15+ Jahre Coaching",
             "image": "/assets/Group-Arrival.jpg",
             "alt": "Trainer Team",
             "bullets": [
-              "Dir steht die ganze Zeit ein erfahrener Trainer zur Seite.",
-              "Egal ob bei Trainingsübungen oder Ernährungsplänen.",
-              "Bei uns bist du immer in den besten Händen!"
+              "Dir steht die ganze Zeit ein erfahrener Trainer zur Seite.   Egal ob bei Trainingsübungen oder Ernährungsplänen.  Bei uns bist du immer in den besten Händen!"
             ]
           }
         ]
       },
       "steps": {
-        "title": "Unser 6-Schritte-Plan zu maximalem Erfolg",
-        "subtitle": "Ein klarer Ablauf, der dich von Tag eins an durch den Prozess führt.",
+        "title": "UNSER <span class='highlight-blue'>6-SCHRITTE-PLAN</span> ZU MAXIMALEM ERFOLG",
+        "subtitle": "EIN KLARER ABLAUF, DER DICH VON TAG EINS AN DURCH DEN PROZESS FÜHRT",
         "scrollIndicator": "Scroll durch die Schritte",
         "slides": [
           {
@@ -297,8 +293,8 @@
         ]
       },
       "transformations": {
-        "title": "Wir haben bereits über 100 Kunden dabei geholfen, ihren traumkörper zu erreichen und mehr Energie aufzubauen.",
-        "subtitle": "Diese Menschen standen genau dort, wo du gerade stehst.",
+        "title": "WIR HABEN BEREITS <span class='highlight-blue'>ÜBER 100 KUNDEN</span> DABEI GEHOLFEN, IHREN <span class='highlight-blue'>TRAUMKÖRPER</span> ZU ERREICHEN UND MEHR ENERGIE AUFZUBAUEN",
+        "subtitle": "DIESE MENSCHEN STANDEN <span class='highlight-blue'>GENAU DORT, WO DU GERADE STEHST</span>",
         "scrollIndicator": "Scroll und sieh die Veränderungen",
         "slides": [
           {
@@ -339,14 +335,14 @@
     },
     "facility": {
       "eyebrow": "DEIN GYM IN MÜNCHEN",
-      "title": "Trainiere dort, wo Ergebnisse entstehen.",
-      "subtitle": "in unserem privatem 300 m² Premium-Gym mitten in München."
+      "title": "<span class='highlight-blue'>TRAINIERE DORT, WO ERGEBNISSE ENTSTEHEN</span>",
+      "subtitle": "IN UNSEREM PRIVATEM 300 M² PREMIUM-GYM MITTEN IN MÜNCHEN"
     },
     "finalCta": {
-      "eyebrow": "BEREIT FÜR DEN NÄCHSTEN SCHRITT?",
-      "title": "Finde heraus, welches System für dich funktioniert.",
-      "subtitle": "Buche eine unverbindliche Beratung und erlebe, wie dein Plan aussehen kann.",
-      "cta": "Jetzt Termin sichern"
+      "eyebrow": "",
+      "title": "BIST DU BEREIT, IN <span class='highlight-blue'>NUR 4 MONATEN</span> SICHTBAR FITTER, ENERGIEGELADENER UND LEISTUNGSFÄHIGER ZU WERDEN",
+      "subtitle": "DANN LASS UNS HERAUSFINDEN, <span class='highlight-blue'>WELCHES SYSTEM FÜR DICH FUNKTIONIERT</span>",
+      "cta": "Sicher dir jetzt dein unverbindlisches Erstgespräch"
     }
   },
   "location": {

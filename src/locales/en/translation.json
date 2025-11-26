@@ -210,32 +210,21 @@
             "time": "1:1 focus",
             "image": "/assets/Expert-Supervision.jpg",
             "alt": "Personal coaching",
-            "bullets": [
-              "We place special emphasis on 1:1 support to help you reach your goal as quickly as possible.",
-              "Therefore, top-trained coaches are always by your side during your training, going through your individual training plan with you."
-            ]
+            "text": "We place special emphasis on 1:1 support to help you reach your goal as quickly as possible. Therefore, top-trained coaches are always by your side during your training, going through your individual training plan with you."
           },
           {
             "title": "TRAINING IN THE MOST MODERN GYM WITH THE BEST EQUIPMENT",
             "time": "Private sessions",
             "image": "/assets/gym.jpg",
             "alt": "Modern gym",
-            "bullets": [
-              "We want only the best for you!",
-              "Therefore, a fully equipped gym with state-of-the-art equipment awaits you.",
-              "You get everything you need from us."
-            ]
+            "text": "We want only the best for you! Therefore, a fully equipped gym with state-of-the-art equipment awaits you. You get everything you need from us."
           },
           {
             "title": "TOP-TRAINED COACHES WITH YEARS OF EXPERIENCE",
-            "time": "15+ years",
+            "time": "Since 2018",
             "image": "/assets/Group-Arrival.jpg",
             "alt": "Coaching team",
-            "bullets": [
-              "An experienced trainer is by your side the whole time.",
-              "Whether with training exercises or nutrition plans.",
-              "With us, you are always in the best hands!"
-            ]
+            "text": "An experienced trainer is by your side the whole time. Whether with training exercises or nutrition plans. With us, you are always in the best hands!"
           }
         ]
       },

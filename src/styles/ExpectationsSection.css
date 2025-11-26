@@ -285,7 +285,7 @@
   width: 95%;
   max-width: 600px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 
 .transformation-description {
@@ -293,7 +293,7 @@
   line-height: 1.7;
   color: #333;
   margin-bottom: 25px;
-  text-align: left;
+  text-align: center;
 }
 
 .transformation-quote {
@@ -542,6 +542,7 @@
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .transformation-quote {

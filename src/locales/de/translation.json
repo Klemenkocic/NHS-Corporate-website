@@ -212,28 +212,21 @@
             "time": "1:1 Fokus",
             "image": "/assets/Expert-Supervision.jpg",
             "alt": "Personal Coaching",
-            "bullets": [
-              "Wir legen besonderen Wert auf eine 1:1 Betreuung, mit der du schnellstmäglich an dein Ziel kommst.  Daher stehen dir während deines Trainings immer top ausgebildete Trainerinnen & Trainer zur Seite, die deine individuelle Trainingplan mit dir durchgehen."
-            ]
+            "text": "Wir legen besonderen Wert auf eine 1:1 Betreuung, mit der du schnellstmäglich an dein Ziel kommst. Daher stehen dir während deines Trainings immer top ausgebildete Trainerinnen & Trainer zur Seite, die deine individuelle Trainingplan mit dir durchgehen."
           },
           {
             "title": "TRAINIEREN IM MODERNSTEN GYM MIT BESTEM EQUIPMENT",
             "time": "Private Sessions",
             "image": "/assets/gym.jpg",
             "alt": "Modernes Gym",
-            "bullets": [
-              "Wir wollen nur das beste für dich!   Daher erwartet dich bei uns ein voll ausgestattetest Gym mit modernsten Geräten.",
-              "Du bekommst alles, was du brauchst von uns"
-            ]
+            "text": "Wir wollen nur das beste für dich! Daher erwartet dich bei uns ein voll ausgestattetest Gym mit modernsten Geräten. Du bekommst alles, was du brauchst von uns"
           },
           {
             "title": "TOP AUSGEBILDETE TRAINER MIT JAHRELANGER ERFAHRUNG",
-            "time": "15+ Jahre Coaching",
+            "time": "Coaching seit 2018",
             "image": "/assets/Group-Arrival.jpg",
             "alt": "Trainer Team",
-            "bullets": [
-              "Dir steht die ganze Zeit ein erfahrener Trainer zur Seite.   Egal ob bei Trainingsübungen oder Ernährungsplänen.  Bei uns bist du immer in den besten Händen!"
-            ]
+            "text": "Dir steht die ganze Zeit ein erfahrener Trainer zur Seite. Egal ob bei Trainingsübungen oder Ernährungsplänen. Bei uns bist du immer in den besten Händen!"
           }
         ]
       },

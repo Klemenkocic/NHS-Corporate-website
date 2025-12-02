@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import './i18n';
 import Navbar from './components/Navbar';
@@ -13,9 +13,18 @@ import FinalCTASection from './components/FinalCTASection';
 import BlobBackground from './components/BlobBackground';
 import BackToTop from './components/BackToTop';
 import CookieConsent from './components/CookieConsent';
+import GoogleAnalytics from './components/GoogleAnalytics';
+import { initUTMTracking } from './utils/utmTracking';
 
 const App: React.FC = () => {
+  const [hasConsent, setHasConsent] = useState(false);
+
   useEffect(() => {
+    // Initialize UTM tracking immediately (before consent)
+    // This captures UTM parameters from the URL and stores them
+    initUTMTracking();
+    console.log('[App] UTM tracking initialized');
+
     // Function to send height to parent iframe
     const sendHeight = () => {
       const height = document.documentElement.scrollHeight;
@@ -30,10 +39,10 @@ const App: React.FC = () => {
 
     // Send height when content changes (use MutationObserver)
     const observer = new MutationObserver(sendHeight);
-    observer.observe(document.body, { 
-      childList: true, 
-      subtree: true, 
-      attributes: true 
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true
     });
 
     // Cleanup
@@ -43,9 +52,15 @@ const App: React.FC = () => {
     };
   }, []);
 
+  const handleConsentChange = (accepted: boolean) => {
+    setHasConsent(accepted);
+    console.log('[App] Cookie consent changed:', accepted ? 'accepted' : 'declined');
+  };
+
   return (
     <>
       <BlobBackground />
+      <GoogleAnalytics hasConsent={hasConsent} />
       <div className="App">
         <Navbar />
         <HeroSection />
@@ -67,7 +82,7 @@ const App: React.FC = () => {
         />
         <FinalCTASection />
         <BackToTop />
-        <CookieConsent />
+        <CookieConsent onConsentChange={handleConsentChange} />
       </div>
     </>
   );

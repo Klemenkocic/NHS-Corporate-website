@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../styles/CookieConsent.css';
-import { TranslationFunction, I18nInstance } from '../types/i18n';
+import { I18nInstance } from '../types/i18n';
 
-const CookieConsent: React.FC = () => {
-  const { t, i18n } = useTranslation() as I18nInstance;
+interface CookieConsentProps {
+  onConsentChange: (accepted: boolean) => void;
+}
+
+const CookieConsent: React.FC<CookieConsentProps> = ({ onConsentChange }) => {
+  const { t } = useTranslation() as I18nInstance;
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -16,17 +20,24 @@ const CookieConsent: React.FC = () => {
         setVisible(true);
       }, 1000);
       return () => clearTimeout(timer);
+    } else {
+      // If consent was already given, notify parent
+      onConsentChange(consent === 'accepted');
     }
-  }, []);
+  }, [onConsentChange]);
 
   const handleAccept = () => {
     localStorage.setItem('cookieConsent', 'accepted');
     setVisible(false);
+    onConsentChange(true);
+    console.log('[Cookie Consent] User accepted cookies');
   };
 
   const handleDecline = () => {
     localStorage.setItem('cookieConsent', 'declined');
     setVisible(false);
+    onConsentChange(false);
+    console.log('[Cookie Consent] User declined cookies');
   };
 
   if (!visible) return null;

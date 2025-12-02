@@ -137,6 +137,44 @@ export const initUTMTracking = (): void => {
 };
 
 /**
+ * Build a consultation URL with UTM parameters
+ * If UTM params exist in current URL, use them
+ * Otherwise, use default fallback params
+ *
+ * @param baseUrl - The consultation page URL (e.g., 'https://newhealthsociety.com/de/kostenlose-erstberatung/')
+ * @returns URL with UTM parameters appended
+ */
+export const buildConsultationURL = (baseUrl: string): string => {
+  // Get UTM params from current URL
+  const currentParams = captureUTMParams();
+
+  // Default fallback params if no UTMs in URL
+  const defaultParams: UTMParams = {
+    utm_source: 'landing_page',
+    utm_medium: 'cta_button',
+    utm_campaign: 'paid_ads'
+  };
+
+  // Use current params if they exist, otherwise use defaults
+  const params = currentParams && Object.keys(currentParams).length > 0
+    ? currentParams
+    : defaultParams;
+
+  // Build URL with parameters
+  const url = new URL(baseUrl);
+
+  if (params.utm_source) url.searchParams.set('utm_source', params.utm_source);
+  if (params.utm_medium) url.searchParams.set('utm_medium', params.utm_medium);
+  if (params.utm_campaign) url.searchParams.set('utm_campaign', params.utm_campaign);
+  if (params.utm_term) url.searchParams.set('utm_term', params.utm_term);
+  if (params.utm_content) url.searchParams.set('utm_content', params.utm_content);
+
+  console.log('[UTM Tracking] Built consultation URL with params:', params);
+
+  return url.toString();
+};
+
+/**
  * Process stored UTM parameters after consent is granted
  */
 export const processStoredUTMParams = (): void => {

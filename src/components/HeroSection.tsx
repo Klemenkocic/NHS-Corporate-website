@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from "@heroui/react";
 import '../styles/HeroSection.css';
 import { TranslationFunction } from '../types/i18n';
+import { buildConsultationURL } from '../utils/utmTracking';
 
 const HeroSection: React.FC = () => {
   // Cast the t function to use our custom type
@@ -12,10 +13,11 @@ const HeroSection: React.FC = () => {
     e.preventDefault();
 
     const currentLanguage = i18n.language;
-    const url = currentLanguage === 'de'
-      ? 'https://newhealthsociety.com/de/kostenlose-erstberatung/?utm_source=landing_page&utm_medium=cta_button&utm_campaign=paid_ads'
-      : 'https://newhealthsociety.com/free-initial-consultation/?utm_source=landing_page&utm_medium=cta_button&utm_campaign=paid_ads';
+    const baseUrl = currentLanguage === 'de'
+      ? 'https://newhealthsociety.com/de/kostenlose-erstberatung/'
+      : 'https://newhealthsociety.com/free-initial-consultation/';
 
+    const url = buildConsultationURL(baseUrl);
     window.top!.location.href = url;
   };
 

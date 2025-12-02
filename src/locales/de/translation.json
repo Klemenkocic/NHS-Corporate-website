@@ -191,7 +191,7 @@
     "reviews": {
       "eyebrow": "",
       "title": "ERKENNST DU DICH DARIN WIEDER? DANN IST WICHTIG, DASS DU EINES VERSTEHST: <span class='highlight-blue'>DER FEHLER LIEGT NICHT BEI DIR!</span>",
-      "subtitle": "<span class='highlight-blue'>DIR HAT BISHER EINFACH EIN SYSTEM GEFEHLT</span>, DAS ZU DEINEM LEBEN PASST",
+      "subtitle": "DIR HAT BISHER EINFACH EIN SYSTEM GEFEHLT, DAS ZU DEINEM LEBEN PASST",
       "subtitle2": "WIR ENTWICKELN EINEN INDIVIDUELLEN FAHRPLAN, DER DICH SCHRITT FÜR SCHRITT AN DEIN ZIEL BRINGT",
       "ratingLabel": "Google Rating",
       "ratingSub": "Basierend auf echten Kunden",
@@ -288,7 +288,7 @@
       },
       "transformations": {
         "title": "WIR HABEN BEREITS <span class='highlight-blue'>ÜBER 100 KUNDEN</span> DABEI GEHOLFEN, IHREN <span class='highlight-blue'>TRAUMKÖRPER</span> ZU ERREICHEN UND MEHR ENERGIE AUFZUBAUEN",
-        "subtitle": "DIESE MENSCHEN STANDEN <span class='highlight-blue'>GENAU DORT, WO DU GERADE STEHST</span>",
+        "subtitle": "DIESE MENSCHEN STANDEN GENAU DORT, WO DU GERADE STEHST",
         "scrollIndicator": "Scroll und sieh die Veränderungen",
         "slides": [
           {
@@ -335,7 +335,7 @@
     "finalCta": {
       "eyebrow": "",
       "title": "BIST DU BEREIT, IN <span class='highlight-blue'>NUR 4 MONATEN</span> SICHTBAR FITTER, ENERGIEGELADENER UND LEISTUNGSFÄHIGER ZU WERDEN",
-      "subtitle": "DANN LASS UNS HERAUSFINDEN, <span class='highlight-blue'>WELCHES SYSTEM FÜR DICH FUNKTIONIERT</span>",
+      "subtitle": "DANN LASS UNS HERAUSFINDEN, WELCHES SYSTEM FÜR DICH FUNKTIONIERT",
       "cta": "Sicher dir jetzt dein unverbindlisches Erstgespräch"
     }
   },

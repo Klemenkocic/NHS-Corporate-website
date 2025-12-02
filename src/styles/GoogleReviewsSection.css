@@ -47,7 +47,6 @@
   max-width: 800px;
   margin: 0 auto 50px auto;
   line-height: var(--line-height-relaxed);
-  font-weight: var(--font-weight-semibold);
 }
 
 .reviews-header .subtitle2 .highlight-blue {

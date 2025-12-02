@@ -17,6 +17,10 @@ const ClientsSection: React.FC = () => {
     { name: 'Autohero', logo: '/assets/autohero.png' },
     { name: 'CHS', logo: '/assets/csm_CHS_Logo_RGB_d40d58f2d9.png' },
     { name: 'Witte', logo: '/assets/witte.png' },
+    { name: 'ELFBAU', logo: '/assets/ELFBAU-LOGO.svg' },
+    { name: 'HV Capital', logo: '/assets/HV Capital.webp' },
+    { name: 'Sky', logo: '/assets/Sky.png' },
+    { name: 'Cataneo', logo: '/assets/Cataneo.png' },
   ];
 
   return (

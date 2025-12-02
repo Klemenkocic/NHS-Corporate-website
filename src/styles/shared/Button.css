@@ -9,6 +9,7 @@
   box-shadow: 0 4px 14px 0 rgba(0, 94, 184, 0.39);
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.2s ease;
+  text-transform: uppercase;
 }
 
 .primary-button:hover {

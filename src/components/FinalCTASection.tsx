@@ -12,7 +12,7 @@ const FinalCTASection: React.FC = () => {
       ? 'https://newhealthsociety.com/de/kostenlose-erstberatung/?utm_source=landing_page&utm_medium=cta_button&utm_campaign=paid_ads'
       : 'https://newhealthsociety.com/free-initial-consultation/?utm_source=landing_page&utm_medium=cta_button&utm_campaign=paid_ads';
 
-    window.location.href = url;
+    window.top!.location.href = url;
   };
 
   return (

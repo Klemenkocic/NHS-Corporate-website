@@ -6,24 +6,22 @@ import { TranslationFunction } from '../types/i18n';
 
 const HeroSection: React.FC = () => {
   // Cast the t function to use our custom type
-  const { t } = useTranslation() as { t: TranslationFunction };
-  
-  const scrollToSection = (e: React.MouseEvent, sectionId: string) => {
+  const { t, i18n } = useTranslation() as { t: TranslationFunction; i18n: any };
+
+  const handleButtonClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+
+    const currentLanguage = i18n.language;
+    const url = currentLanguage === 'de'
+      ? 'https://newhealthsociety.com/de/kostenlose-erstberatung'
+      : 'https://newhealthsociety.com/free-initial-consultation';
+
+    window.location.href = url;
   };
 
   return (
     <section id="hero" className="hero-section">
-      <div className="video-container">
-        <video autoPlay loop muted playsInline className="hero-video">
-          <source src="/assets/Website-Video.m4v" type="video/mp4" />
-          {t('common.videoUnsupported')}
-        </video>
+      <div className="hero-background">
         <div className="overlay"></div>
       </div>
       <div className="hero-content">
@@ -32,7 +30,7 @@ const HeroSection: React.FC = () => {
         <Button
           className="primary-button"
           radius="md"
-          onClick={(e: React.MouseEvent) => scrollToSection(e, 'investment')}
+          onClick={handleButtonClick}
         >
           {t('hero.cta')}
         </Button>

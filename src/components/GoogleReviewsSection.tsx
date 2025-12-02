@@ -17,10 +17,11 @@ interface GoogleReview {
 }
 
 const GoogleReviewsSection: React.FC = () => {
-  const { t } = useTranslation() as { t: TranslationFunction };
+  const { t, i18n } = useTranslation() as { t: TranslationFunction; i18n: any };
   const [reviews, setReviews] = useState<GoogleReview[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [totalRatings, setTotalRatings] = useState<number>(0);
 
   useEffect(() => {
     const apiKey = process.env.REACT_APP_GOOGLE_PLACES_API_KEY;
@@ -76,6 +77,7 @@ const GoogleReviewsSection: React.FC = () => {
         console.log('Reviews data received:', data);
         console.log('Number of reviews:', data.reviews?.length || 0);
         setReviews(data.reviews || []);
+        setTotalRatings(data.userRatingCount || 0);
       } catch (err) {
         if ((err as Error).name !== 'AbortError') {
           console.error('Fetch error details:', err);
@@ -114,7 +116,12 @@ const GoogleReviewsSection: React.FC = () => {
           </div>
           <div>
             <p className="rating-label">{t('landing.reviews.ratingLabel')}</p>
-            <p className="rating-sub">{t('landing.reviews.ratingSub')}</p>
+            <p className="rating-sub">
+              {totalRatings > 0
+                ? `${t('landing.reviews.ratingSub')} (${totalRatings} ${t('landing.reviews.ratingsCount', { count: totalRatings })})`
+                : t('landing.reviews.ratingSub')
+              }
+            </p>
           </div>
         </div>
 
@@ -158,10 +165,12 @@ const GoogleReviewsSection: React.FC = () => {
                 className="primary-button"
                 radius="md"
                 onClick={() => {
-                  const section = document.getElementById('contact');
-                  if (section) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                  }
+                  const currentLanguage = i18n.language;
+                  const url = currentLanguage === 'de'
+                    ? 'https://newhealthsociety.com/de/kostenlose-erstberatung'
+                    : 'https://newhealthsociety.com/free-initial-consultation';
+
+                  window.location.href = url;
                 }}
               >
                 {t('landing.reviews.cta')}

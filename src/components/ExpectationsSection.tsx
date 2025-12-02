@@ -85,6 +85,13 @@ const ExpectationsSection: React.FC<FeatureSectionProps> = ({
           anticipatePin: 1,
           invalidateOnRefresh: true, // Recalculate on window resize
           markers: false, // Set to true for debugging
+          onRefresh: () => {
+            // Ensure element is visible after refresh
+            if (horizontal) {
+              horizontal.style.visibility = 'visible';
+              horizontal.style.opacity = '1';
+            }
+          }
         }
       });
     };

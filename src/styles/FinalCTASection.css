@@ -37,7 +37,7 @@
   font-size: var(--font-size-h2);
   margin: 10px 0 15px 0;
   font-weight: var(--font-weight-bold);
-  color: #666;
+  color: var(--color-primary-dark);
 }
 
 .final-cta-container h2 .highlight-blue {
@@ -45,8 +45,8 @@
 }
 
 .final-cta-container p {
-  font-size: 1.4rem;
-  color: #666;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
   margin: 0 auto;
 }

@@ -8,7 +8,7 @@
   },
   "hero": {
     "title": "<span class='highlight-blue'>WERDE IN NUR 4 MONATEN</span> SICHTBAR FITTER, SCHLANKER UND<br />ENERGIEGELADENER MIT UNSEREM <span class='highlight-blue'>INDIVIDUELLEN 1:1 COACHING</span>",
-    "subtitle": "Für Unternehmer & Führungskräfte, die genug haben von überfüllten Gyms, Diäten und Trainings ohne Erfolg<br />und endlich ein System wollen, das in ihren Alltag passt",
+    "subtitle": "Für Unternehmer & Führungskräfte, die genug haben von überfüllten Gyms, Diäten und Trainings ohne Erfolg und endlich ein System wollen, das in ihren Alltag passt",
     "cta": "Jetzt Beratung buchen"
   },
   "about": {
@@ -195,6 +195,7 @@
       "subtitle2": "WIR ENTWICKELN EINEN INDIVIDUELLEN FAHRPLAN, DER DICH SCHRITT FÜR SCHRITT AN DEIN ZIEL BRINGT",
       "ratingLabel": "Google Rating",
       "ratingSub": "Basierend auf echten Kunden",
+      "ratingsCount": "Bewertungen",
       "loading": "Bewertungen werden geladen …",
       "error": "Bewertungen konnten nicht geladen werden.",
       "missingApiKey": "Bitte hinterlege deinen Google-API-Schlüssel.",

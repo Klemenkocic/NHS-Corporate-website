@@ -7,7 +7,7 @@ import { TranslationFunction } from '../types/i18n';
 
 const Navbar: React.FC = () => {
   // Cast the t function to use our custom type
-  const { t } = useTranslation() as { t: TranslationFunction };
+  const { t, i18n } = useTranslation() as { t: TranslationFunction; i18n: any };
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -42,14 +42,16 @@ const Navbar: React.FC = () => {
     });
   };
 
-  const scrollToSection = (e: React.MouseEvent, sectionId: string) => {
+  const handleButtonClick = (e: React.MouseEvent) => {
     e.preventDefault();
     closeMenu();
-    
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+
+    const currentLanguage = i18n.language;
+    const url = currentLanguage === 'de'
+      ? 'https://newhealthsociety.com/de/kostenlose-erstberatung'
+      : 'https://newhealthsociety.com/free-initial-consultation';
+
+    window.location.href = url;
   };
 
   return (
@@ -67,7 +69,7 @@ const Navbar: React.FC = () => {
               <Button
                 className="primary-button nav-contact-button"
                 radius="md"
-                onClick={(e: React.MouseEvent) => scrollToSection(e, 'contact')}
+                onClick={handleButtonClick}
               >
                 {t('navbar.contactUs')}
               </Button>
@@ -82,7 +84,7 @@ const Navbar: React.FC = () => {
           <Button
             className="primary-button nav-contact-button desktop-contact-button"
             radius="md"
-            onClick={(e: React.MouseEvent) => scrollToSection(e, 'contact')}
+            onClick={handleButtonClick}
           >
             {t('navbar.contactUs')}
           </Button>

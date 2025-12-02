@@ -193,6 +193,7 @@
       "subtitle2": "WE DEVELOP AN INDIVIDUAL ROADMAP THAT TAKES YOU TO YOUR GOAL STEP BY STEP",
       "ratingLabel": "Google Rating",
       "ratingSub": "Based on verified clients",
+      "ratingsCount": "reviews",
       "loading": "Loading reviews…",
       "error": "Reviews could not be loaded.",
       "missingApiKey": "Please provide your Google API key.",

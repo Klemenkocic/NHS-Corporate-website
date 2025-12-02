@@ -4,13 +4,15 @@ import '../styles/FinalCTASection.css';
 import { TranslationFunction } from '../types/i18n';
 
 const FinalCTASection: React.FC = () => {
-  const { t } = useTranslation() as { t: TranslationFunction };
+  const { t, i18n } = useTranslation() as { t: TranslationFunction; i18n: any };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+  const handleButtonClick = () => {
+    const currentLanguage = i18n.language;
+    const url = currentLanguage === 'de'
+      ? 'https://newhealthsociety.com/de/kostenlose-erstberatung'
+      : 'https://newhealthsociety.com/free-initial-consultation';
+
+    window.location.href = url;
   };
 
   return (
@@ -21,7 +23,7 @@ const FinalCTASection: React.FC = () => {
           <h2 dangerouslySetInnerHTML={{ __html: t('landing.finalCta.title') }}></h2>
           <p dangerouslySetInnerHTML={{ __html: t('landing.finalCta.subtitle') }}></p>
         </div>
-        <button className="primary-button final-cta-button" onClick={scrollToTop}>
+        <button className="primary-button final-cta-button" onClick={handleButtonClick}>
           {t('landing.finalCta.cta')}
         </button>
       </div>

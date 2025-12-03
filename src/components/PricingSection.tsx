@@ -11,10 +11,7 @@ const InvestmentSection: React.FC = () => {
 
   // Add function to handle contact form opening or redirect
   const handleBookConsultation = () => {
-    const currentLanguage = i18n.language;
-    const baseUrl = currentLanguage === 'de'
-      ? 'https://newhealthsociety.com/de/kostenlose-erstberatung-ads/'
-      : 'https://newhealthsociety.com/free-initial-consultation-ads/';
+    const baseUrl = 'https://newhealthsociety.com/de/kostenlose-erstberatung-ads/';
 
     const url = buildConsultationURL(baseUrl);
     window.top!.location.href = url;

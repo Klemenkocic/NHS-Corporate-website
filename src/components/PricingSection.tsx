@@ -3,17 +3,21 @@ import { useTranslation } from 'react-i18next';
 import '../styles/PricingSection.css';
 import { Button } from "@heroui/react";
 import { TranslationFunction } from '../types/i18n';
+import { buildConsultationURL } from '../utils/utmTracking';
 
 const InvestmentSection: React.FC = () => {
   // Cast the t function to use our custom type
-  const { t } = useTranslation() as { t: TranslationFunction };
-  
+  const { t, i18n } = useTranslation() as { t: TranslationFunction; i18n: any };
+
   // Add function to handle contact form opening or redirect
   const handleBookConsultation = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    const currentLanguage = i18n.language;
+    const baseUrl = currentLanguage === 'de'
+      ? 'https://newhealthsociety.com/de/kostenlose-erstberatung-ads/'
+      : 'https://newhealthsociety.com/free-initial-consultation-ads/';
+
+    const url = buildConsultationURL(baseUrl);
+    window.top!.location.href = url;
   };
 
   return (
